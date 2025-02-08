@@ -1,0 +1,33 @@
+import React from "react";
+import useAuth from "../../../hooks/useAuth";
+
+
+const AgentProfile = () => {
+    const { user } = useAuth();
+
+    return (
+        <div className=" flex flex-col justify-center items-center min-h-screen">
+
+            <h2 className="text-3xl font-semibold text-center mb-8">My Profile</h2>
+            <div className="flex flex-col items-center">
+                <img
+                    src={user?.photoURL || "https://via.placeholder.com/150"}
+                    alt="User Avatar"
+                    className="w-32 h-32 rounded-full border-4 border-gray-300 shadow-md"
+                />
+                <h3 className="text-2xl font-medium mt-4">{user?.displayName || "No Name"}</h3>
+                <p className="text-lg ">{user?.email}</p>
+                <span className="px-5 py-2 mt-3 text-lg font-semibold  bg-blue-600 rounded-full">
+                    Agent
+                </span>
+            </div>
+            <div className="mt-8 border-t pt-6  text-lg">
+                <p><strong>Joining Date:</strong> {user?.metadata?.creationTime || "N/A"}</p>
+                <p><strong>Last Sign-in:</strong> {user?.metadata?.lastSignInTime || "N/A"}</p>
+            </div>
+
+        </div>
+    );
+};
+
+export default AgentProfile;

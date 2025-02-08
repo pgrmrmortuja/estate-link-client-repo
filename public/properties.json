@@ -1,0 +1,422 @@
+[
+    {
+        "property_image": "https://i.ibb.co.com/Kq7jhk7/Beige-Collage-Real-Estate-Linked-In-Single-Image-Ad.png",
+        "property_title": "Spacious Apartment in Dhaka",
+        "property_location": "Gulshan, Dhaka",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Ahsan Khan",
+        "agent_email": "ahsan@gmail.com",
+        "agent_image": "https://i.ibb.co.com/QrtGT67/download-1.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 50000,
+            "maximum_price": 70000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/Qj22cw9/Beige-Modern-Real-Estate-Linked-In-Article-Cover-Image.png",
+        "property_title": "Modern Duplex in Chattogram",
+        "property_location": "Pahartali, Chattogram",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Mehedi Hasan",
+        "agent_email": "mehedi@gmail.com",
+        "agent_image": "https://i.ibb.co.com/8P4NwbC/download-2.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 75000,
+            "maximum_price": 100000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/JshkcBP/Black-Gold-White-Modern-Real-Estate-Seek-Cover-Image-1.png",
+        "property_title": "Cozy House in Sylhet",
+        "property_location": "Amberkhana, Sylhet",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Rafiq Uddin",
+        "agent_email": "rafiq@gmail.com",
+        "agent_image": "https://i.ibb.co.com/M5pZt8q/download-3.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 45000,
+            "maximum_price": 60000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/k4GznZt/Black-Gold-White-Modern-Real-Estate-Seek-Cover-Image.png",
+        "property_title": "Luxurious Villa in Dhaka",
+        "property_location": "Baridhara, Dhaka",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Tanvir Alam",
+        "agent_email": "tanvir@gmail.com",
+        "agent_image": "https://i.ibb.co.com/Cb4W7SZ/download-4.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 150000,
+            "maximum_price": 200000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/gmdDJkx/Black-Yellow-and-White-Minimalist-Real-Estate-SEEK-Cover-Image.png",
+        "property_title": "Family Apartment in Rajshahi",
+        "property_location": "Uposhahar, Rajshahi",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Shahidul Islam",
+        "agent_email": "shahidul@gmail.com",
+        "agent_image": "https://i.ibb.co.com/84Nk84k/download-5.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 40000,
+            "maximum_price": 55000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/5WqPq50/Blue-And-White-Modern-Real-Estate-SEEK-Cover-Image-1.png",
+        "property_title": "Elegant Condo in Khulna",
+        "property_location": "Shibbari, Khulna",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Faisal Ahmed",
+        "agent_email": "faisal@gmail.com",
+        "agent_image": "https://i.ibb.co.com/89zfvw1/download.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 60000,
+            "maximum_price": 80000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/DKDZyV7/Blue-And-White-Modern-Real-Estate-SEEK-Cover-Image.png",
+        "property_title": "Charming Flat in Barishal",
+        "property_location": "Nathullabad, Barishal",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Asif Rahman",
+        "agent_email": "asif@gmail.com",
+        "agent_image": "https://i.ibb.co.com/QHHqQ1Q/images-1.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 35000,
+            "maximum_price": 50000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/bKgRFwd/Blue-Minimalist-Real-Estate-Facebook-Fundraiser-Cover-Photo-1.png",
+        "property_title": "Compact Studio in Rangpur",
+        "property_location": "Station Road, Rangpur",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Nasir Hossain",
+        "agent_email": "nasir@gmail.com",
+        "agent_image": "https://i.ibb.co.com/PDm7N47/images-2.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 25000,
+            "maximum_price": 40000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/WcNfxy6/Blue-Minimalist-Real-Estate-Facebook-Fundraiser-Cover-Photo.png",
+        "property_title": "Affordable House in Comilla",
+        "property_location": "Kandirpar, Comilla",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Kamrul Hasan",
+        "agent_email": "kamrul@gmail.com",
+        "agent_image": "https://i.ibb.co.com/QFV3TLk/images-3.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 30000,
+            "maximum_price": 45000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/Bg6ST0z/Brown-and-Beige-Modern-Real-Estate-SEEK-Cover-Image.png",
+        "property_title": "Modern Apartment in Dhaka",
+        "property_location": "Dhanmondi, Dhaka",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Ahsan Khan",
+        "agent_email": "ahsan@gmail.com",
+        "agent_image": "https://i.ibb.co.com/QrtGT67/download-1.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 70000,
+            "maximum_price": 90000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/Y0Ct90D/Brown-and-Orange-Professional-Real-Estate-Seek-Cover-Image.png",
+        "property_title": "Luxury Flat in Chattogram",
+        "property_location": "Nasirabad, Chattogram",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Mehedi Hasan",
+        "agent_email": "mehedi@gmail.com",
+        "agent_image": "https://i.ibb.co.com/8P4NwbC/download-2.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 80000,
+            "maximum_price": 110000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/DbFcTwF/Brown-Grey-and-White-Modern-Real-Estate-Seek-Cover-Image.png",
+        "property_title": "Beautiful Villa in Sylhet",
+        "property_location": "Zindabazar, Sylhet",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Rafiq Uddin",
+        "agent_email": "rafiq@gmail.com",
+        "agent_image": "https://i.ibb.co.com/M5pZt8q/download-3.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 50000,
+            "maximum_price": 75000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/jhYQwwy/Brown-White-Minimalist-Real-Estate-SEEK-Cover-Image.png",
+        "property_title": "Elegant House in Barishal",
+        "property_location": "C&B Road, Barishal",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Tanvir Alam",
+        "agent_email": "tanvir@gmail.com",
+        "agent_image": "https://i.ibb.co.com/Cb4W7SZ/download-4.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 40000,
+            "maximum_price": 60000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/34BhJBy/Cream-Minimalist-Elegant-Real-Estate-Seek-Cover-Image.png",
+        "property_title": "Family Apartment in Khulna",
+        "property_location": "Boyra, Khulna",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Shahidul Islam",
+        "agent_email": "shahidul@gmail.com",
+        "agent_image": "https://i.ibb.co.com/84Nk84k/download-5.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 55000,
+            "maximum_price": 75000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/NmmpGHK/Cream-Yellow-Modern-Real-Estate-Seek-Cover-Image.png",
+        "property_title": "Compact Flat in Rangpur",
+        "property_location": "Medical Road, Rangpur",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Faisal Ahmed",
+        "agent_email": "faisal@gmail.com",
+        "agent_image": "https://i.ibb.co.com/89zfvw1/download.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 30000,
+            "maximum_price": 50000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/HPYPvtG/Dark-Blue-White-Yellow-Modern-Real-Estate-Seek-Cover-Image.png",
+        "property_title": "Stylish Studio in Comilla",
+        "property_location": "Kotbari, Comilla",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Asif Rahman",
+        "agent_email": "asif@gmail.com",
+        "agent_image": "https://i.ibb.co.com/QHHqQ1Q/images-1.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 35000,
+            "maximum_price": 48000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/wQDM5tf/Gray-and-Green-Modern-Real-Estate-Seek-Cover-Image.png",
+        "property_title": "Renovated Condo in Dhaka",
+        "property_location": "Bashundhara, Dhaka",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Nasir Hossain",
+        "agent_email": "nasir@gmail.com",
+        "agent_image": "https://i.ibb.co.com/PDm7N47/images-2.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 95000,
+            "maximum_price": 120000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/XWHwNSx/Gray-Black-Modern-Real-Estate-SEEK-Cover-Image.png",
+        "property_title": "Stylish Villa in Chattogram",
+        "property_location": "Halishahar, Chattogram",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Kamrul Hasan",
+        "agent_email": "kamrul@gmail.com",
+        "agent_image": "https://i.ibb.co.com/QFV3TLk/images-3.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 85000,
+            "maximum_price": 110000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/Wfnrvgf/Greejn-Paper-Real-Estate-Linkedin-Article-Cover-Image.png",
+        "property_title": "Exclusive Flat in Rajshahi",
+        "property_location": "Boalia, Rajshahi",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Ahsan Khan",
+        "agent_email": "ahsan@gmail.com",
+        "agent_image": "https://i.ibb.co.com/QrtGT67/download-1.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 45000,
+            "maximum_price": 68000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/tPrxsZR/Green-and-White-Modern-Real-Estate-SEEK-Cover-Image.png",
+        "property_title": "Modern Apartment in Sylhet",
+        "property_location": "Airport Road, Sylhet",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Mehedi Hasan",
+        "agent_email": "mehedi@gmail.com",
+        "agent_image": "https://i.ibb.co.com/8P4NwbC/download-2.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 70000,
+            "maximum_price": 90000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/r0d1DZp/Green-White-Minimalist-Real-Estate-SEEK-Cover-Image-1.png",
+        "property_title": "Budget Flat in Barishal",
+        "property_location": "Sadar Road, Barishal",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Rafiq Uddin",
+        "agent_email": "rafiq@gmail.com",
+        "agent_image": "https://i.ibb.co.com/M5pZt8q/download-3.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 25000,
+            "maximum_price": 40000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/3N6HhfN/Green-White-Minimalist-Real-Estate-SEEK-Cover-Image.png",
+        "property_title": "Elegant Duplex in Dhaka",
+        "property_location": "Banani, Dhaka",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Tanvir Alam",
+        "agent_email": "tanvir@gmail.com",
+        "agent_image": "https://i.ibb.co.com/Cb4W7SZ/download-4.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 100000,
+            "maximum_price": 140000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/Q89015p/Grey-and-Black-Minimalist-Real-Estate-SEEK-Cover-Image.png",
+        "property_title": "Affordable Studio in Rajshahi",
+        "property_location": "Binodpur, Rajshahi",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Shahidul Islam",
+        "agent_email": "shahidul@gmail.com",
+        "agent_image": "https://i.ibb.co.com/84Nk84k/download-5.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 20000,
+            "maximum_price": 35000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/bRbcvkY/Grey-and-Blue-Modern-Real-Estate-SEEK-Cover-Image.png",
+        "property_title": "Compact Apartment in Khulna",
+        "property_location": "Sonadanga, Khulna",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Faisal Ahmed",
+        "agent_email": "faisal@gmail.com",
+        "agent_image": "https://i.ibb.co.com/89zfvw1/download.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 30000,
+            "maximum_price": 45000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/JK9smnY/Grey-Grey-Real-Estate-Corporate-SMB-Branding-Kit-Linked-In-Article-Cover-Image.png",
+        "property_title": "Deluxe Villa in Dhaka",
+        "property_location": "Uttara, Dhaka",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Asif Rahman",
+        "agent_email": "asif@gmail.com",
+        "agent_image": "https://i.ibb.co.com/QHHqQ1Q/images-1.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 150000,
+            "maximum_price": 190000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/8rngckr/Navy-and-Orange-Professional-Real-Estate-Seek-Cover-Image.png",
+        "property_title": "Stylish Studio in Chattogram",
+        "property_location": "Patenga, Chattogram",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Nasir Hossain",
+        "agent_email": "nasir@gmail.com",
+        "agent_image": "https://i.ibb.co.com/PDm7N47/images-2.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 28000,
+            "maximum_price": 42000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/gTZDXPf/Neon-Green-Modern-Illustrated-House-Real-Estate-Facebook-Cover.png",
+        "property_title": "Budget Flat in Comilla",
+        "property_location": "Shashongacha, Comilla",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Kamrul Hasan",
+        "agent_email": "kamrul@gmail.com",
+        "agent_image": "https://i.ibb.co.com/QFV3TLk/images-3.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 20000,
+            "maximum_price": 35000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/H4hPbsf/Oranhe-and-Black-Elegant-Real-Estate-Seek-Cover-Image.png",
+        "property_title": "Renovated Duplex in Dhaka",
+        "property_location": "Mohammadpur, Dhaka",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Ahsan Khan",
+        "agent_email": "ahsan@gmail.com",
+        "agent_image": "https://i.ibb.co.com/QrtGT67/download-1.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 130000,
+            "maximum_price": 180000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/s3nKv7F/Real-Estate-Banner-Landscape.png",
+        "property_title": "Luxury Condo in Chattogram",
+        "property_location": "Agrabad, Chattogram",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Mehedi Hasan",
+        "agent_email": "mehedi@gmail.com",
+        "agent_image": "https://i.ibb.co.com/8P4NwbC/download-2.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 90000,
+            "maximum_price": 120000
+        }
+    },
+    {
+        "property_image": "https://i.ibb.co.com/YZbskF7/White-and-Black-Minimalist-Real-Estate-SEEK-Cover-Image.png",
+        "property_title": "Modern House in Sylhet",
+        "property_location": "Shahjalal Upashahar, Sylhet",
+        "property_details": "This spacious apartment features 3 bedrooms, 2 bathrooms, and a total area of 1800 square feet. The property offers amenities such as 24/7 security. It is a semi-furnished residential property.",
+        "agent_name": "Rafiq Uddin",
+        "agent_email": "rafiq@gmail.com",
+        "agent_image": "https://i.ibb.co.com/M5pZt8q/download-3.jpg",
+        "verification_status": "pending",
+        "price_range": {
+            "minimum_price": 65000,
+            "maximum_price": 85000
+        }
+    }
+]
