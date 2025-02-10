@@ -34,6 +34,8 @@ import AdDetails from "../Pages/AdDetails";
 
 
 
+
+
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -50,13 +52,13 @@ export const router = createBrowserRouter([
             {
                 path: '/propertyDetails/:id',
                 element: <PrivateRoute><Details></Details></PrivateRoute> ,
-                loader: ({ params }) => fetch(`http://localhost:5000/property-id/${params.id}`),
+                
             },
-            {
-                path: '/details/:id',
-                element: <PrivateRoute><AdDetails></AdDetails></PrivateRoute> ,
-                loader: ({ params }) => fetch(`http://localhost:5000/ad-details/${params.id}`),
-            },
+            // {
+            //     path: '/details/:id',
+            //     element: <PrivateRoute><AdDetails></AdDetails></PrivateRoute> ,
+            //     loader: ({ params }) => fetch(`http://localhost:5000/ad-details/${params.id}`),
+            // },
             {
                 path: '/login',
                 element: <Login></Login>,
@@ -109,7 +111,7 @@ export const router = createBrowserRouter([
             {
                 path: 'updateProperty/:id',
                 element: <AgentRoute><UpdateProperty></UpdateProperty></AgentRoute> ,
-                loader: ({ params }) => fetch(`http://localhost:5000/property-id/${params.id}`),
+                // loader: ({ params }) => fetch(`http://localhost:5000/property-id/${params.id}`),
             },
             {
                 path: 'soldProperties',
@@ -140,12 +142,12 @@ export const router = createBrowserRouter([
             {
                 path: 'makeOffer/:id',
                 element: <UserRoute><MakeOffer></MakeOffer></UserRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/wishlist-id/${params.id}`),
+                // loader: ({ params }) => fetch(`http://localhost:5000/wishlist-id/${params.id}`),
             },
             {
                 path: 'payment/:id',
                 element: <UserRoute><Payment></Payment></UserRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/user-offers-id/${params.id}`),
+                // loader: ({ params }) => fetch(`http://localhost:5000/user-offers-id/${params.id}`),
             },
             
         ]

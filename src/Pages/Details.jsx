@@ -1,18 +1,26 @@
-import React, { useContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react';
+import { useLoaderData, useParams } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
 import Swal from 'sweetalert2';
 import Review from './Review';
 import useAxiosSecure from '../hooks/useAxiosSecure';
 
 const Details = () => {
-    // const {property} = useLoaderData();
 
+    const { id } = useParams();
+    const [property, setProperty] = useState({});
     const { user } = useContext(AuthContext);
-
     const axiosSecure = useAxiosSecure();
-
     const userEmail = user?.email;
+
+    useEffect(() => {
+        const fetchProperty = async () => {
+            const response = await axiosSecure.get(`/property-id/${id}`);
+            setProperty(response.data);
+        };
+
+        fetchProperty();
+    }, [id, axiosSecure]);
 
     const {
         _id,
@@ -24,7 +32,9 @@ const Details = () => {
         property_details,
         price_range,
         property_image
-    } = useLoaderData();
+    } = property;
+
+    console.log('property for details', property);
 
     const myProperty = {
         myPropertyId: _id,
@@ -42,11 +52,12 @@ const Details = () => {
     const handleWishlist = async event => {
         event.preventDefault();
 
+        if (!property || !property._id) return;
+
         try {
-            // Check if the property already exists in the wishlist
+
             const checkRes = await axiosSecure.get(`/wishlists/check/${_id}?userEmail=${userEmail}`);
             if (checkRes.data.exists) {
-                // If it exists, show a warning popup
                 Swal.fire({
                     position: "top",
                     icon: "warning",
@@ -57,11 +68,10 @@ const Details = () => {
                 return;
             }
 
-            // If it doesn't exist, add to the wishlist
+
             const propertyRes = await axiosSecure.post('/wishlists', myProperty);
 
             if (propertyRes.data.insertedId) {
-                // Show success popup
                 Swal.fire({
                     position: "top",
                     icon: "success",
@@ -80,8 +90,8 @@ const Details = () => {
                 timer: 1500
             });
         }
+    };
 
-    }
 
 
     return (
@@ -124,8 +134,8 @@ const Details = () => {
             </div>
 
             <Review
-            myProperty = {myProperty}
-            
+                myProperty={myProperty}
+
             >
 
             </Review>

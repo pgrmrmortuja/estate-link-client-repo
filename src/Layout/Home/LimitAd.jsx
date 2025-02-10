@@ -1,16 +1,18 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
-import useAxiosSecure from '../../hooks/useAxiosSecure';
+// import useAxiosSecure from '../../hooks/useAxiosSecure';
+import useAxiosPublic from '../../hooks/useAxiosPublic';
 
 const LimitAd = () => {
 
-    const axiosSecure = useAxiosSecure();
+    // const axiosSecure = useAxiosSecure();
+    const axiosPublic = useAxiosPublic();
 
-    const { data: limits = [], refetch } = useQuery({
+    const { data: limits = [] } = useQuery({
         queryKey: ['limits'],
         queryFn: async () => {
-            const response = await axiosSecure.get(`/advertise-limited?limit=${4}`);
+            const response = await axiosPublic.get(`/advertise-limited?limit=${4}`);
             return response.data;
         },
     });
@@ -41,7 +43,7 @@ const LimitAd = () => {
 
                                 <div className="card-actions mt-3 justify-start w-full">
 
-                                    <Link className='w-full' to={`/details/${limit._id}`}>
+                                    <Link className='w-full' to={`/propertyDetails/${limit._id}`}>
                                         <button className="btn  bg-green-500 text-black hover:text-green-400 border-none w-full">Details</button>
                                     </Link>
                                 </div>

@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../../providers/AuthProvider';
 import useAxiosPublic from '../../../hooks/useAxiosPublic';
@@ -13,6 +13,21 @@ const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_ke
 
 
 const UpdateProperty = () => {
+    const { id } = useParams();
+    const [item, setItem] = useState({});
+    const { user } = useContext(AuthContext);
+    const { register, handleSubmit } = useForm();
+    const axiosPublic = useAxiosPublic();
+    const axiosSecure = useAxiosSecure();
+
+    useEffect(() => {
+        const fetchProperty = async () => {
+            const response = await axiosSecure.get(`/property-id/${id}`);
+            setItem(response.data);
+        };
+
+        fetchProperty();
+    }, [id]);
 
     const {
         _id,
@@ -25,29 +40,22 @@ const UpdateProperty = () => {
         verification_status,
         price_range,
         property_image
-    } = useLoaderData();
+    } = item;
 
     console.log(property_title);
-
-    const { user } = useContext(AuthContext);
-
-    const { register, handleSubmit } = useForm();
-    const axiosPublic = useAxiosPublic();
-    const axiosSecure = useAxiosSecure();
-
 
 
 
 
 
     const onSubmit = async (data) => {
-        console.log(data)
+        console.log(data);
         // image upload to imgbb and then get an url
-        let property_image_url = property_image; 
+        let property_image_url = property_image;
 
-        
-        if (data.property_image && data.property_image[0]) {
-            const imageFile = { image: data.property_image[0] };
+
+        if (data.property_image && data.property_image?.[0]) {
+            const imageFile = { image: data.property_image?.[0] };
 
             try {
                 const res = await axiosPublic.post(image_hosting_api, imageFile, {
@@ -57,7 +65,7 @@ const UpdateProperty = () => {
                 });
 
                 if (res.data.success) {
-                    property_image_url = res.data.data.display_url; 
+                    property_image_url = res.data.data.display_url;
                 }
             } catch (error) {
                 console.error("Image upload failed:", error);
@@ -67,7 +75,7 @@ const UpdateProperty = () => {
                     title: "Image upload failed!",
                     showConfirmButton: true,
                 });
-                return; 
+                return;
             }
         }
 
@@ -76,25 +84,25 @@ const UpdateProperty = () => {
             agent_name: data.agent_name,
             agent_email: data.agent_email,
             agent_image: data.agent_image,
-            property_title: data.property_title,
-            property_location: data.property_location,
-            property_details: data.property_details,
+            property_title: data.property_title || property_title,
+            property_location: data.property_location || property_location,
+            property_details: data.property_details || property_details,
             verification_status: data.verification_status,
             price_range: {
-                minimum_price: parseFloat(data.minimum_price),
-                maximum_price: parseFloat(data.maximum_price),
+                minimum_price: parseFloat(data.minimum_price || price_range.minimum_price),
+                maximum_price: parseFloat(data.maximum_price || price_range.maximum_price),
             },
-            property_image: property_image_url, 
+            property_image: property_image_url,
         };
 
         try {
             const propertyRes = await axiosSecure.put(`/property-id/${_id}`, property);
 
-            if (propertyRes.data.modifiedCount > 0) {
+            if (propertyRes.data.modifiedCount > 0 || propertyRes.data.acknowledged) {
                 Swal.fire({
                     position: "top",
                     icon: "success",
-                    title: `${data.property_title} is updated.`,
+                    title: `${data?.property_title || property_title} is updated.`,
                     showConfirmButton: false,
                     timer: 1500
                 });
@@ -129,7 +137,7 @@ const UpdateProperty = () => {
                     </label>
                     <input
                         type="text"
-                        defaultValue={agent_name}
+                        defaultValue={user?.displayName || ""}
                         readOnly
                         placeholder="Name"
                         {...register('agent_name', { required: true })}
@@ -144,7 +152,7 @@ const UpdateProperty = () => {
                     </label>
                     <input
                         type="text"
-                        defaultValue={agent_email}
+                        defaultValue={user?.email || ""}
                         readOnly
                         placeholder="email"
                         {...register('agent_email', { required: true })}
@@ -159,7 +167,7 @@ const UpdateProperty = () => {
                     </label>
                     <input
                         type="text"
-                        defaultValue={agent_image}
+                        defaultValue={user?.photoURL || ""}
                         readOnly
                         placeholder="photo"
                         {...register('agent_image', { required: true })}
@@ -176,7 +184,7 @@ const UpdateProperty = () => {
                         type="text"
                         name="property_title"
                         defaultValue={property_title}
-                        {...register("property_title", { required: true })}
+                        {...register("property_title")}
                         className="mt-2 bg-white w-full border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 text-black"
                     />
                 </div>
@@ -190,7 +198,7 @@ const UpdateProperty = () => {
                         type="text"
                         name="property_location"
                         defaultValue={property_location}
-                        {...register("property_location", { required: true })}
+                        {...register("property_location")}
                         className="mt-2 bg-white w-full border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 text-black"
                     />
                 </div>
@@ -237,7 +245,7 @@ const UpdateProperty = () => {
                     <textarea
                         name="property_details"
                         defaultValue={property_details}
-                        {...register("property_details", { required: true })}
+                        {...register("property_details")}
                         className="text-black textarea textarea-bordered mt-2 border-2 border-gray-300 h-24 bg-white w-full"
                         placeholder="Property Bio"></textarea>
                 </div>
@@ -252,8 +260,8 @@ const UpdateProperty = () => {
                         <input
                             type="number"
                             name="minimum_price"
-                            defaultValue={price_range.minimum_price}
-                            {...register("minimum_price", { required: true })}
+                            defaultValue={price_range?.minimum_price}
+                            {...register("minimum_price")}
                             className="mt-2 bg-white w-full border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 text-black"
                         />
                     </div>
@@ -266,8 +274,8 @@ const UpdateProperty = () => {
                         <input
                             type="number"
                             name="maximum_price"
-                            defaultValue={price_range.maximum_price}
-                            {...register("maximum_price", { required: true })}
+                            defaultValue={price_range?.maximum_price}
+                            {...register("maximum_price")}
                             className="mt-2 bg-white w-full border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 text-black"
                         />
                     </div>

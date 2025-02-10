@@ -1,15 +1,21 @@
-import React, { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useLoaderData, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import useAuth from '../../../hooks/useAuth';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
 
 const MakeOffer = () => {
     const { user } = useAuth();
-
+    const { id } = useParams(); 
+    const [property, setProperty] = useState({});
     const [offerPrice, setOfferPrice] = useState('');
-
     const axiosSecure = useAxiosSecure();
+
+    useEffect(() => {
+        axiosSecure.get(`/wishlist-id/${id}`)
+            .then(res => setProperty(res.data))
+            .catch(error => console.error("Error fetching property:", error));
+    }, [id, axiosSecure]);
 
 
     const buyer_name = user?.displayName;
@@ -28,7 +34,7 @@ const MakeOffer = () => {
         property_location,
         price_range,
         property_image
-    } = useLoaderData();
+    } = property;
 
     console.log(myPropertyId);
 
@@ -115,7 +121,7 @@ const MakeOffer = () => {
                 {/* Property Location (Read-only) */}
                 <div className="mb-4">
                     <label htmlFor="property_location" className="block text-lg font-medium text-gray-700">
-                        Property Locaiton
+                        Property Location
                     </label>
                     <input
                         type="text"
@@ -172,7 +178,7 @@ const MakeOffer = () => {
                 {/* User Photo (Read-only) */}
                 <div className="mb-4">
                     <label htmlFor="userEmail" className="block text-lg font-medium text-gray-700">
-                        User Image URL
+                        Buyer Image URL
                     </label>
                     <input
                         type="text"

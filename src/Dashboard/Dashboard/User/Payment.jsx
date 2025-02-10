@@ -1,13 +1,31 @@
-import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useLoaderData, useParams } from 'react-router-dom';
 import CheckoutForm from './CheckoutForm';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import useAxiosSecure from '../../../hooks/useAxiosSecure';
 
 // TODO: add publishable key
 const stripePromise = loadStripe(import.meta.env.VITE_Payment_Gateway_PK);
 
 const Payment = () => {
+
+    const { id } = useParams();
+    const axiosSecure = useAxiosSecure();
+    const [property, setProperty] = useState({});
+
+
+    useEffect(() => {
+        axiosSecure.get(`/user-offers-id/${id}`)
+            .then(res => {
+                setProperty(res.data);
+                
+            })
+            .catch(error => {
+                console.error("Error fetching data:", error);
+                
+            });
+    }, [id, axiosSecure]);
 
     const {
         _id,
@@ -23,7 +41,7 @@ const Payment = () => {
         buyer_name,
         buyer_email,
         buying_date,
-    } = useLoaderData();
+    } = property;
 
     const myProperty = {
         _id,

@@ -92,7 +92,7 @@ const Wishlist = () => {
 
                                     <div className="card-actions mt-3 justify-between">
 
-                                        <Link to={`/makeOffer/${item.myPropertyId}`}>
+                                        <Link to={`/dashboard/makeOffer/${item.myPropertyId}`}>
                                             <button className="btn  bg-green-500 text-black hover:text-green-400 border-none">Make An Offer</button>
                                         </Link>
 

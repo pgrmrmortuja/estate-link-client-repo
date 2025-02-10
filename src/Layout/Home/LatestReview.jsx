@@ -1,16 +1,18 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
-import useAxiosSecure from '../../hooks/useAxiosSecure';
+// import useAxiosSecure from '../../hooks/useAxiosSecure';
+import useAxiosPublic from '../../hooks/useAxiosPublic';
 
 
 const LatestReview = () => {
-    const axiosSecure = useAxiosSecure();
+    // const axiosSecure = useAxiosSecure();
+    const axiosPublic = useAxiosPublic();
 
    
     const { data: reviews = [] } = useQuery({
         queryKey: ['latest-reviews'],
         queryFn: async () => {
-            const res = await axiosSecure.get('/reviews');
+            const res = await axiosPublic.get('/reviews');
             return res.data.slice(-3).reverse(); 
         }
     });

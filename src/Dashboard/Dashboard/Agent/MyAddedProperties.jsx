@@ -82,12 +82,12 @@ const MyAddedProperties = () => {
                                     <h2 className="card-title">{item.property_title}</h2>
                                     <p><span className='font-bold'>Location:</span> {item.property_location}</p>
                                     <p><span className='font-bold'>Agent Name:</span> {item.agent_name}</p>
-                                    <p><span className='font-bold'>Price Range:</span> ${item.price_range.minimum_price} to ${item.price_range.maximum_price}</p>
+                                    <p><span className='font-bold'>Price Range:</span> ${item.price_range?.minimum_price} to ${item.price_range?.maximum_price}</p>
                                     <p><span className='font-bold'>Verification Status:</span> <span className='text-red-300'>
                                         {item.verification_status}</span> </p>
                                     <div className="card-actions mt-3 justify-between">
 
-                                        <Link to={`/updateProperty/${item._id}`}>
+                                        <Link to={`/dashboard/updateProperty/${item._id}`}>
                                             <button className="btn  bg-green-500 text-black hover:text-green-400 border-none">Update</button>
                                         </Link>
 
