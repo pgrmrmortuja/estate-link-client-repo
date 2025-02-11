@@ -3,14 +3,14 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/f
 
 const Footer = () => {
     return (
-        <footer className="bg-green-100 text-black">
+        <footer className="bg-blue-100 text-black">
             <div className="container mx-auto px-4 py-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {/* Company Info */}
                     <div>
-                        <h2 className="text-2xl font-bold mb-4">Property</h2>
+                        <h2 className="text-2xl font-bold mb-4">RealEstateConnect</h2>
                         <p className="text-sm">
-                            Connecting learners with expert tutors to create a friendly and accessible language learning experience.
+                            Your trusted platform for buying, selling, and managing real estate properties effortlessly and securely.
                         </p>
                         <div className="flex items-center gap-3 mt-4">
                             <a
@@ -62,10 +62,10 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a
-                                    href="/find-tutors"
+                                    href="/properties"
                                     className="hover:text-blue-500 transition duration-200"
                                 >
-                                    Find Property
+                                    Find Properties
                                 </a>
                             </li>
                             <li>
@@ -83,16 +83,16 @@ const Footer = () => {
                     <div>
                         <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
                         <ul className="space-y-2 text-sm">
-                            <li>Email: support@linguaconnect.com</li>
-                            <li>Phone: +1 (800) 987-6543</li>
-                            <li>Address: 789 Learning Path, Knowledge City, USA</li>
+                            <li>Email: support@realestateconnect.com</li>
+                            <li>Phone: +1 (800) 123-4567</li>
+                            <li>Address: 123 Real Estate Ave, Cityscape, USA</li>
                         </ul>
                     </div>
                 </div>
 
                 {/* Bottom Footer */}
                 <div className="mt-10 border-t border-gray-700 pt-5 text-center text-sm">
-                    <p>&copy; {new Date().getFullYear()} Property. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} RealEstateConnect. All rights reserved.</p>
                 </div>
             </div>
         </footer>

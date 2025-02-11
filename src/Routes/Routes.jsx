@@ -31,6 +31,7 @@ import AdminProfile from "../Dashboard/Dashboard/Admin/AdminProfile";
 import AgentProfile from "../Dashboard/Dashboard/Agent/AgentProfile";
 import UserProfile from "../Dashboard/Dashboard/User/UserProfile";
 import AdDetails from "../Pages/AdDetails";
+import FAQ from "../Layout/Home/FAQ";
 
 
 
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
             {
                 path: '/',
                 element: <HomeLayout></HomeLayout>,
+            },
+            {
+                path: '/faq',
+                element: <FAQ></FAQ> ,
             },
             {
                 path: '/allProperties',

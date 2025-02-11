@@ -59,6 +59,7 @@ const Navbar = () => {
             <NavLink to="/" className={linkClass} >
                 Home
             </NavLink>
+
             {
                 user &&
                 (
@@ -73,6 +74,10 @@ const Navbar = () => {
                     All Properties
                 </NavLink>
             )}
+
+            <NavLink to="/faq" className={linkClass} >
+                FAQ
+            </NavLink>
         </>
     );
 

@@ -5,39 +5,39 @@ const FAQ = () => {
     const [openFAQ, setOpenFAQ] = useState(null);
 
     useEffect(() => {
-        document.title = "FAQ | LinguaConnect";
+        document.title = "FAQ | RealEstateConnect";
     }, []);
 
     const faqData = [
         {
             id: 1,
-            question: "What services does LinguaConnect provide?",
+            question: "What services does RealEstateConnect provide?",
             answer:
-                "LinguaConnect offers a variety of services, including personalized tutor recommendations, booking language learning sessions, and access to resources for improving your language skills.",
+                "RealEstateConnect helps users buy, sell, and rent properties effortlessly. We provide property listings, agent connections, and secure transactions for a smooth experience.",
         },
         {
             id: 2,
-            question: "How can I book a language tutor?",
+            question: "How can I list my property?",
             answer:
-                "You can browse our list of expert tutors, select a tutor based on your preferences, and schedule a session at a time that works for you using our user-friendly platform.",
+                "Simply sign up as an agent, navigate to the 'Add Property' section, fill in the necessary details, upload images, and submit your listing for approval.",
         },
         {
             id: 3,
             question: "What payment methods are accepted?",
             answer:
-                "We accept payments through all major credit/debit cards, PayPal, and secure online payment gateways to ensure a hassle-free booking experience.",
+                "We accept payments via secure online payment gateways for property-related transactions.",
         },
         {
             id: 4,
-            question: "Do you offer a refund policy?",
+            question: "Do you offer refunds for property bookings?",
             answer:
-                "Yes, we offer a refund policy if you are not satisfied with a session. Please refer to our refund policy page for detailed terms and conditions.",
+                "Refunds are subject to our policy. If a transaction is canceled within the allowed period, a refund may be processed based on the agreement terms.",
         },
         {
             id: 5,
-            question: "Can I choose a tutor based on my learning preferences?",
+            question: "Can I connect with agents directly?",
             answer:
-                "Absolutely! LinguaConnect allows you to filter tutors based on language, teaching style, and availability, ensuring the perfect match for your learning needs.",
+                "Yes! Our platform allows you to browse agent profiles, check their property listings, and contact them directly for inquiries or negotiations.",
         },
     ];
 
@@ -55,7 +55,7 @@ const FAQ = () => {
                     {faqData.map((faq) => (
                         <div
                             key={faq.id}
-                            className="bg-green-100 rounded-lg shadow-md p-4 transition-all duration-300"
+                            className="bg-blue-100 rounded-lg shadow-md p-4 transition-all duration-300"
                         >
                             <div
                                 className="flex justify-between items-center cursor-pointer"
