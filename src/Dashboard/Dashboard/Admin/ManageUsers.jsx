@@ -7,7 +7,7 @@ import useAxiosSecure from '../../../hooks/useAxiosSecure';
 const ManageUsers = () => {
 
     const axiosSecure = useAxiosSecure();
-    // Fetch all products
+    // Fetch all users
     const { data: users = [], refetch } = useQuery({
         queryKey: ['users'],
         queryFn: async () => {

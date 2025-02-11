@@ -1,10 +1,23 @@
 import React from "react";
 import useAuth from "../../../hooks/useAuth";
+import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import { useQuery } from "@tanstack/react-query";
 
 
 
 const AgentProfile = () => {
     const { user } = useAuth();
+    const axiosSecure = useAxiosSecure();
+
+    const { data: userInfo = [] } = useQuery({
+        queryKey: ['user', user?.email],
+        queryFn: async () => {
+            const response = await axiosSecure.get(`/user-email/${user?.email}`);
+            return response.data;
+        },
+    });
+
+    console.log(userInfo[0]?.role);
 
     return (
         <div className=" flex flex-col justify-center items-center min-h-screen">
@@ -18,9 +31,11 @@ const AgentProfile = () => {
                 />
                 <h3 className="text-2xl font-medium mt-4">{user?.displayName || "No Name"}</h3>
                 <p className="text-lg ">{user?.email}</p>
-                <span className="px-5 py-2 mt-3 text-lg font-semibold  bg-blue-600 rounded-full">
-                    {"Admin"}
-                </span>
+                {userInfo[0]?.role && userInfo[0]?.role !== "User" && (
+                    <span className="px-5 py-2 mt-3 text-lg font-semibold bg-blue-600 rounded-full">
+                        {userInfo[0]?.role}
+                    </span>
+                )}
             </div>
             <div className="mt-8 border-t pt-6  text-lg">
                 <p><strong>Joining Date:</strong> {user?.metadata?.creationTime || "N/A"}</p>
