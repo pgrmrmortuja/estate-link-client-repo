@@ -4,6 +4,7 @@ import LimitAd from './LimitAd';
 import LatestReview from './LatestReview';
 import AboutUs from './AboutUs';
 import Choose from './Choose';
+import Slider from './Slider';
 
 const HomeLayout = () => {
     return (
@@ -12,6 +13,7 @@ const HomeLayout = () => {
                 <title>Bistro Boss | Home</title>
             </Helmet>
             <h1>Home</h1>
+            <Slider></Slider>
             <AboutUs></AboutUs>
             <Choose></Choose>
             <LimitAd></LimitAd>

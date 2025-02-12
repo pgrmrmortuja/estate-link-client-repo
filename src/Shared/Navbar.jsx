@@ -184,7 +184,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <Link to="/" className="text-xl md:text-2xl text-green-600 font-semibold">
-                        Property
+                        EstateLink
                     </Link>
                 </div>
 

@@ -5,15 +5,15 @@ const FAQ = () => {
     const [openFAQ, setOpenFAQ] = useState(null);
 
     useEffect(() => {
-        document.title = "FAQ | RealEstateConnect";
+        document.title = "FAQ | EstateLink";
     }, []);
 
     const faqData = [
         {
             id: 1,
-            question: "What services does RealEstateConnect provide?",
+            question: "What services does EstateLink provide?",
             answer:
-                "RealEstateConnect helps users buy, sell, and rent properties effortlessly. We provide property listings, agent connections, and secure transactions for a smooth experience.",
+                "EstateLink helps users buy, sell, and rent properties effortlessly. We provide property listings, agent connections, and secure transactions for a smooth experience.",
         },
         {
             id: 2,

@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {/* Company Info */}
                     <div>
-                        <h2 className="text-2xl font-bold mb-4">RealEstateConnect</h2>
+                        <h2 className="text-2xl font-bold mb-4">EstateLink</h2>
                         <p className="text-sm">
                             Your trusted platform for buying, selling, and managing real estate properties effortlessly and securely.
                         </p>
@@ -62,7 +62,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a
-                                    href="/properties"
+                                    href="/allProperties"
                                     className="hover:text-blue-500 transition duration-200"
                                 >
                                     Find Properties
@@ -83,16 +83,16 @@ const Footer = () => {
                     <div>
                         <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
                         <ul className="space-y-2 text-sm">
-                            <li>Email: support@realestateconnect.com</li>
+                            <li>Email: support@estateLink.com</li>
                             <li>Phone: +1 (800) 123-4567</li>
-                            <li>Address: 123 Real Estate Ave, Cityscape, USA</li>
+                            <li>Address: 123 EstateLink Ave, Cityscape, USA</li>
                         </ul>
                     </div>
                 </div>
 
                 {/* Bottom Footer */}
                 <div className="mt-10 border-t border-gray-700 pt-5 text-center text-sm">
-                    <p>&copy; {new Date().getFullYear()} RealEstateConnect. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} EstateLink. All rights reserved.</p>
                 </div>
             </div>
         </footer>
