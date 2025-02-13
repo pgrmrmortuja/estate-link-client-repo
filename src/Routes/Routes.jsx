@@ -32,6 +32,7 @@ import AgentProfile from "../Dashboard/Dashboard/Agent/AgentProfile";
 import UserProfile from "../Dashboard/Dashboard/User/UserProfile";
 import AdDetails from "../Pages/AdDetails";
 import FAQ from "../Layout/Home/FAQ";
+import Visitor from "../Dashboard/Dashboard/Admin/Visitor";
 
 
 
@@ -98,6 +99,10 @@ export const router = createBrowserRouter([
             {
                 path: 'advertise',
                 element: <AdminRoute><AdvertiseProperties></AdvertiseProperties></AdminRoute> ,
+            },
+            {
+                path: 'visitor',
+                element: <AdminRoute><Visitor></Visitor></AdminRoute>,
             },
 
             //Agent

@@ -34,6 +34,7 @@ const AdminNavbar = ({ isOpen, setIsOpen }) => {
                     <li><NavLink to="manageUsers" className={linkClass}>Manage Users</NavLink></li>
                     <li><NavLink to="manageReviews" className={linkClass}>Manage Reviews</NavLink></li>
                     <li><NavLink to="advertise" className={linkClass}>Advertise Properties</NavLink></li>
+                    <li><NavLink to="visitor" className={linkClass}>Visitor</NavLink></li>
                     <li><NavLink to="/" className={linkClass}>Back to Home</NavLink></li>
                 </ul>
             </div>

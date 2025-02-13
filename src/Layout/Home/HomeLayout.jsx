@@ -12,7 +12,7 @@ const HomeLayout = () => {
             <Helmet>
                 <title>Bistro Boss | Home</title>
             </Helmet>
-            <h1>Home</h1>
+            
             <Slider></Slider>
             <AboutUs></AboutUs>
             <Choose></Choose>

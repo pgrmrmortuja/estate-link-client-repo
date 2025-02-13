@@ -13,6 +13,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import { ToastContainer } from 'react-toastify';
+import TrackVisit from './Providers/TrackVisit';
 
 const queryClient = new QueryClient()
 
@@ -37,6 +38,7 @@ createRoot(document.getElementById('root')).render(
           <div className='max-w-screen-xl mx-auto'>
             <RouterProvider router={router} />
           </div>
+          <TrackVisit />
           <ToastContainer />
         </HelmetProvider>
       </QueryClientProvider>

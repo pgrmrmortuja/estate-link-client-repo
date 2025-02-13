@@ -8,8 +8,17 @@ import { toast } from "react-toastify";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import { jwtDecode } from "jwt-decode";
+import axios from "axios";
+import useTrackVisit from "../hooks/useTrackVisit";
+
 
 const Navbar = () => {
+
+
+    // useTrackVisit();
+
+
+
     const { user, logOut } = useContext(AuthContext);
 
     const navigate = useNavigate();
