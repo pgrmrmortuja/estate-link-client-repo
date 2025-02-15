@@ -63,7 +63,7 @@ const Wishlist = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-5'>
                     {
                         properties.map(item =>
-                            <div key={item._id} className="card border-2 border-green-400 bg-base-100 w-96 shadow-xl mt-5 mb-10">
+                            <div key={item._id} className="border-2 border-green-400 card bg-white shadow-lg rounded-lg transform transition duration-300 hover:scale-105">
 
                                 <div className='relative'>
                                     <div className='absolute -top-10 left-1/2 transform -translate-x-1/2'>
@@ -78,7 +78,7 @@ const Wishlist = () => {
                                     <img
                                         src={item.property_image}
                                         alt={item.property_title}
-                                        className="rounded-xl" />
+                                        className="rounded-xl w-full h-48 object-cover" />
                                 </figure>
                                 <div className="card-body flex flex-grow justify-end ml-4">
                                     <h2 className="card-title">{item.property_title}</h2>

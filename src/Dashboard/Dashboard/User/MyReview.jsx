@@ -49,7 +49,7 @@ const MyReview = () => {
 
     return (
         <div>
-            <h1 className="text-4xl font-bold mb-20 text-center">My Review</h1>
+            <h1 className="text-4xl font-bold mb-14 text-center">My Review</h1>
 
             {reviews.length === 0 ? (
                 <div className="flex flex-col items-center justify-center h-40">
@@ -57,10 +57,10 @@ const MyReview = () => {
                     <p className="text-lg text-red-600">It seems you haven't added any review yet. Browse property and add your first review!</p>
                 </div>
             ) : (
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-5'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
                     {
                         reviews.map(item =>
-                            <div key={item._id} className="card border-2 border-green-400 bg-base-100 w-96 shadow-xl mt-5 mb-10">
+                            <div key={item._id} className="card border border-gray-300 bg-white shadow-lg rounded-lg transform transition duration-300 hover:scale-105">
 
                                 <div className="card-body flex flex-grow justify-end ml-4">
                                     <h2 className="card-title">{item.property_title}</h2>
