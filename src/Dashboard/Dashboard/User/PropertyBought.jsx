@@ -3,6 +3,7 @@ import useAuth from '../../../hooks/useAuth';
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const PropertyBought = () => {
 
@@ -21,7 +22,10 @@ const PropertyBought = () => {
 
 
     return (
-        <div>
+        <div className='container mx-auto px-4 py-10'>
+            <Helmet>
+                <title>Property Bought | EstateLink</title>
+            </Helmet>
             <h1 className="text-4xl font-bold mb-14 text-center">Property Bought</h1>
 
             {properties.length === 0 ? (
@@ -39,7 +43,7 @@ const PropertyBought = () => {
                                     <img
                                         src={item.property_image}
                                         alt={item.property_title}
-                                        className="rounded-xl w-full h-48 object-cover"/>
+                                        className="rounded-xl w-full h-48 object-cover" />
                                 </figure>
                                 <div className="card-body flex flex-grow justify-end ml-4">
                                     <h2 className="card-title">{item.property_title}</h2>

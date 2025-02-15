@@ -3,6 +3,7 @@ import Swal from 'sweetalert2';
 import { useQuery } from '@tanstack/react-query';
 import useAuth from '../../../hooks/useAuth';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const ManageUsers = () => {
 
@@ -93,6 +94,9 @@ const ManageUsers = () => {
 
     return (
         <div className="container mx-auto my-10 px-4">
+            <Helmet>
+                <title>Manage Users | EstateLink</title>
+            </Helmet>
             <h1 className="text-4xl font-bold mb-10 text-center">Manage Users</h1>
 
             <div className="overflow-x-auto">

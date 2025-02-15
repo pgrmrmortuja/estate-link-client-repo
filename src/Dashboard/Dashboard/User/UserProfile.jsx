@@ -2,12 +2,13 @@ import React from "react";
 import useAuth from "../../../hooks/useAuth";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
+import { Helmet } from "react-helmet-async";
 
 const UserProfile = () => {
     const { user } = useAuth();
 
     const axiosSecure = useAxiosSecure();
-   
+
     const { data: userInfo = [] } = useQuery({
         queryKey: ['user', user?.email],
         queryFn: async () => {
@@ -20,7 +21,9 @@ const UserProfile = () => {
 
     return (
         <div className=" flex flex-col justify-center items-center min-h-screen">
-
+            <Helmet>
+                <title>User Profile | EstateLink</title>
+            </Helmet>
             <h2 className="text-3xl font-semibold text-center mb-8">My Profile</h2>
             <div className="flex flex-col items-center">
                 <img

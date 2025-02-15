@@ -10,7 +10,7 @@ const HomeLayout = () => {
     return (
         <div className='w-11/12 mx-auto'>
             <Helmet>
-                <title>Bistro Boss | Home</title>
+                <title>Home | EstateLink</title>
             </Helmet>
             
             <Slider></Slider>

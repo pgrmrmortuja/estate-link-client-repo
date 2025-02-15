@@ -92,7 +92,7 @@ const SignUp = () => {
     return (
         <div className='min-h-screen flex justify-center items-center mb-10'>
             <Helmet>
-                <title>Bistro Boss | Sign Up</title>
+                <title>Sign Up | EstateLink</title>
             </Helmet>
             <div className="card bg-green-100 w-full max-w-lg shrink-0 p-10">
                 <h2 className='text-2xl font-semibold text-center text-black'>Register Your Account</h2>

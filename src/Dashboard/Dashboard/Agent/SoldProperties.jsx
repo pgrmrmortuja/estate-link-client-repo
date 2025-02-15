@@ -2,10 +2,11 @@ import React from 'react';
 import useAuth from '../../../hooks/useAuth';
 import { useQuery } from '@tanstack/react-query';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const SoldProperties = () => {
 
-   const axiosSecure = useAxiosSecure();
+    const axiosSecure = useAxiosSecure();
 
     const { user } = useAuth();
 
@@ -21,6 +22,9 @@ const SoldProperties = () => {
 
     return (
         <div className='container mx-auto p-4'>
+            <Helmet>
+                <title>My Sold Property | EstateLink</title>
+            </Helmet>
             <h1 className="text-4xl font-bold mb-20 text-center">My Sold Properties</h1>
 
             <div className="overflow-x-auto">
@@ -33,7 +37,7 @@ const SoldProperties = () => {
                             <th className='text-center'>Buyer Name</th>
                             <th className='text-center'>Buyer Email</th>
                             <th className='text-center'>Price</th>
-                
+
                         </tr>
                     </thead>
                     <tbody>
@@ -45,7 +49,7 @@ const SoldProperties = () => {
                                 <td className='text-center'>{property.buyer_name}</td>
                                 <td className='text-center'>{property.buyer_email}</td>
                                 <td className='text-center'>${property.price}</td>
-                                
+
                             </tr>
                         ))}
                     </tbody>

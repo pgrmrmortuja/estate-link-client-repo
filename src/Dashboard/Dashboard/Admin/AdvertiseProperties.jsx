@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const AdvertiseProperties = () => {
 
@@ -71,6 +72,9 @@ const AdvertiseProperties = () => {
 
     return (
         <div className='container mx-auto p-4'>
+            <Helmet>
+                <title>Advertise | EstateLink</title>
+            </Helmet>
             <h1 className="text-4xl font-bold mb-20 text-center">Advertise Properties</h1>
 
             <div className="overflow-x-auto">

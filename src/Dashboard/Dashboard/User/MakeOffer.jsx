@@ -3,10 +3,11 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import useAuth from '../../../hooks/useAuth';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const MakeOffer = () => {
     const { user } = useAuth();
-    const { id } = useParams(); 
+    const { id } = useParams();
     const [property, setProperty] = useState({});
     const [offerPrice, setOfferPrice] = useState('');
     const axiosSecure = useAxiosSecure();
@@ -59,7 +60,7 @@ const MakeOffer = () => {
     const handleOffer = async (event) => {
         event.preventDefault();
 
-        
+
         if (offerPrice < price_range.minimum_price || offerPrice > price_range.maximum_price) {
             Swal.fire({
                 position: "top",
@@ -74,7 +75,7 @@ const MakeOffer = () => {
         try {
 
             const propertyRes = await axiosSecure.post('/offers', offerData);
-            console.log('Property Response:', propertyRes.data);  
+            console.log('Property Response:', propertyRes.data);
 
             if (propertyRes.data.insertedId) {
                 Swal.fire({
@@ -100,6 +101,9 @@ const MakeOffer = () => {
 
     return (
         <div className="flex justify-center items-center min-h-screen  p-6">
+            <Helmet>
+                <title>Make Offer | EstateLink</title>
+            </Helmet>
             <form onSubmit={handleOffer} className="w-full max-w-lg bg-green-100 p-8 rounded-lg shadow-lg space-y-6">
                 <h2 className="text-3xl font-bold text-center text-black mb-10">Make An Offer</h2>
 

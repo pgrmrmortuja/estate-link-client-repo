@@ -35,7 +35,7 @@ const AdminNavbar = ({ isOpen, setIsOpen }) => {
                     <li><NavLink to="manageReviews" className={linkClass}>Manage Reviews</NavLink></li>
                     <li><NavLink to="advertise" className={linkClass}>Advertise Properties</NavLink></li>
                     <li><NavLink to="visitor" className={linkClass}>Visitor</NavLink></li>
-                    <li><NavLink to="/" className={linkClass}>Back to Home</NavLink></li>
+                    <li><NavLink to="/" className="p-2 rounded-lg text-orange-500 hover:bg-transparent hover:text-green-500 hover:bg-green-300 font-bold text-lg text-left">Back to Home</NavLink></li>
                 </ul>
             </div>
         </div>

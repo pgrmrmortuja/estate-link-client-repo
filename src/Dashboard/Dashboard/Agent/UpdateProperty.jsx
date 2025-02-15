@@ -5,6 +5,7 @@ import Swal from 'sweetalert2';
 import { AuthContext } from '../../../providers/AuthProvider';
 import useAxiosPublic from '../../../hooks/useAxiosPublic';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -127,6 +128,9 @@ const UpdateProperty = () => {
 
     return (
         <div className="flex justify-center items-center min-h-screen  p-6">
+            <Helmet>
+                <title>Updated Property | EstateLink</title>
+            </Helmet>
             <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-lg bg-green-100 p-8 rounded-lg shadow-lg space-y-6">
                 <h2 className="text-3xl font-bold text-center text-black mb-10">Add New Property</h2>
 

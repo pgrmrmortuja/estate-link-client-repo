@@ -88,7 +88,7 @@ const Login = () => {
     return (
         <div className='min-h-screen flex justify-center items-center mb-10'>
             <Helmet>
-                <title>Bistro Boss | Login</title>
+                <title>Login | EstateLink</title>
             </Helmet>
             <div className="card bg-green-100 w-full max-w-lg shrink-0 p-10">
                 <h2 className='text-2xl text-black font-semibold text-center'>Login Your Account</h2>

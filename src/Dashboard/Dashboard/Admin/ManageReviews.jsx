@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import Swal from 'sweetalert2';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const ManageReviews = () => {
 
@@ -49,7 +50,9 @@ const ManageReviews = () => {
     return (
         <div>
             <h1 className="text-4xl font-bold mb-20 text-center">Mange Reviews</h1>
-
+            <Helmet>
+                <title>Manage Reviews | EstateLink</title>
+            </Helmet>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-5'>
                 {
                     reviews.map(item =>
@@ -70,7 +73,7 @@ const ManageReviews = () => {
                                 <div className="card-actions mt-3 justify-between">
 
                                     <button
-                                        onClick={() => handleDelete(item._id)} 
+                                        onClick={() => handleDelete(item._id)}
                                         className="btn  bg-red-500 text-black hover:text-red-400 border-none">Delete</button>
                                 </div>
                             </div>

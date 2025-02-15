@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import Swal from 'sweetalert2';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const ManageProperties = () => {
     const axiosSecure = useAxiosSecure();
@@ -49,6 +50,9 @@ const ManageProperties = () => {
 
     return (
         <div className="container mx-auto my-10 px-4">
+            <Helmet>
+                <title>Manage Property | EstateLink</title>
+            </Helmet>
             <h1 className="text-4xl font-bold mb-10 text-center">Manage Properties</h1>
 
             <div className="overflow-x-auto">

@@ -5,6 +5,7 @@ import axios from 'axios';
 import { AuthContext } from '../../../providers/AuthProvider';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import useAxiosPublic from '../../../hooks/useAxiosPublic';
+import { Helmet } from 'react-helmet-async';
 
 
 const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
@@ -68,6 +69,9 @@ const AddProperty = () => {
     }
     return (
         <div className="flex justify-center items-center min-h-screen  p-6">
+            <Helmet>
+                <title>Add Property | EstateLink</title>
+            </Helmet>
             <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-lg bg-green-100 p-8 rounded-lg shadow-lg space-y-6">
                 <h2 className="text-3xl font-bold text-center text-black mb-10">Add New Property</h2>
 

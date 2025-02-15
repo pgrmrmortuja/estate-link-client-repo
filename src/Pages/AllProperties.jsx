@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import useAxiosSecure from '../hooks/useAxiosSecure';
 import { FaSearch, FaSortAmountDown } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 const AllProperties = () => {
     const axiosSecure = useAxiosSecure();
@@ -31,6 +32,9 @@ const AllProperties = () => {
 
     return (
         <div className='container mx-auto px-4 py-6'>
+            <Helmet>
+                <title>All Property | EstateLink</title>
+            </Helmet>
             <h1 className="text-4xl font-bold mb-10 text-center">All Properties</h1>
 
             {/* Search Input & Sort Dropdown */}

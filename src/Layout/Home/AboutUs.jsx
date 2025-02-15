@@ -8,8 +8,6 @@ const AboutUs = () => {
     const isInView = useInView(ref, { triggerOnce: false });
 
     useEffect(() => {
-        document.title = "About Us | RealEstateConnect";
-
         const interval = setInterval(() => {
             setOrder([...shuffle(order)]);
         }, 2000); // Every 2 seconds

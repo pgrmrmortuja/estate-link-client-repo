@@ -27,7 +27,7 @@ const UserNavbar = ({ isOpen, setIsOpen }) => {
             >
                 <h2 className="text-2xl font-bold mb-6 mt-14 ">User Dashboard</h2>
                 <ul className=''>
-                    
+
                     <li>
                         <NavLink to="user-profile" className={linkClass} >
                             My Profile
@@ -48,11 +48,7 @@ const UserNavbar = ({ isOpen, setIsOpen }) => {
                             My Reviews
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/" className={linkClass} >
-                            Back to Home
-                        </NavLink>
-                    </li>
+                    <li><NavLink to="/" className="p-2 rounded-lg text-orange-500 hover:bg-transparent hover:text-green-500 hover:bg-green-300 font-bold text-lg text-left">Back to Home</NavLink></li>
 
                 </ul>
             </div>

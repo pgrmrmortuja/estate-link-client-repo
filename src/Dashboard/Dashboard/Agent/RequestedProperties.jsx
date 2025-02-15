@@ -3,6 +3,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import Swal from 'sweetalert2';
 import useAuth from '../../../hooks/useAuth';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const RequestedProperties = () => {
     const axiosSecure = useAxiosSecure();
@@ -53,6 +54,9 @@ const RequestedProperties = () => {
 
     return (
         <div className="container mx-auto my-10 px-4">
+            <Helmet>
+                <title>Requested Property | EstateLink</title>
+            </Helmet>
             <h1 className="text-4xl font-bold mb-10 text-center">Requested Properties</h1>
 
             <div className="overflow-x-auto">

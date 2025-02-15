@@ -4,6 +4,7 @@ import { AuthContext } from '../providers/AuthProvider';
 import Swal from 'sweetalert2';
 import Review from './Review';
 import useAxiosSecure from '../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const Details = () => {
 
@@ -96,6 +97,9 @@ const Details = () => {
 
     return (
         <div className='container mx-auto p-4'>
+            <Helmet>
+                <title>Property Details | EstateLink</title>
+            </Helmet>
             <h2 className="text-center text-3xl font-bold mb-5">Property Details</h2>
             <div className="hero bg-base-200 border-2 border-green-500 p-5 sm:p-10 rounded-lg">
                 <div className="hero-content flex flex-col md:flex-row items-center gap-5">

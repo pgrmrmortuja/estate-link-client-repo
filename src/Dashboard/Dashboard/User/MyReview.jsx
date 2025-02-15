@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import Swal from 'sweetalert2';
 import useAuth from '../../../hooks/useAuth';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const MyReview = () => {
     const axiosSecure = useAxiosSecure();
@@ -48,7 +49,10 @@ const MyReview = () => {
 
 
     return (
-        <div>
+        <div className='container mx-auto px-4 py-10'>
+            <Helmet>
+                <title>My Review | EstateLink</title>
+            </Helmet>
             <h1 className="text-4xl font-bold mb-14 text-center">My Review</h1>
 
             {reviews.length === 0 ? (

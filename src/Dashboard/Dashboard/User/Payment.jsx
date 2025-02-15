@@ -4,6 +4,7 @@ import CheckoutForm from './CheckoutForm';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 // TODO: add publishable key
 const stripePromise = loadStripe(import.meta.env.VITE_Payment_Gateway_PK);
@@ -19,11 +20,11 @@ const Payment = () => {
         axiosSecure.get(`/user-offers-id/${id}`)
             .then(res => {
                 setProperty(res.data);
-                
+
             })
             .catch(error => {
                 console.error("Error fetching data:", error);
-                
+
             });
     }, [id, axiosSecure]);
 
@@ -66,6 +67,9 @@ const Payment = () => {
     return (
 
         <div className='container mx-auto p-4 mt-10'>
+            <Helmet>
+                <title>Payment | EstateLink</title>
+            </Helmet>
             <Elements stripe={stripePromise}>
                 <CheckoutForm
                     key={myProperty._id}
