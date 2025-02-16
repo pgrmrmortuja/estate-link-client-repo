@@ -25,19 +25,19 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 py-16">
+    <div className="container mx-auto flex items-center justify-center px-6 py-16">
       <motion.div 
         initial={{ opacity: 0, scale: 0.9 }} 
         animate={{ opacity: 1, scale: 1 }} 
         transition={{ duration: 0.5 }}
-        className="max-w-3xl w-full bg-white p-12 rounded-3xl shadow-2xl border border-gray-300 flex flex-col md:flex-row"
+        className="w-full p-12 rounded-3xl shadow-2xl shadow-orange-400 flex flex-col md:flex-row "
       >
         <div className="md:w-1/2 flex flex-col justify-center text-center md:text-left p-6">
-          <h2 className="text-5xl font-bold text-indigo-700 mb-4">Get in Touch</h2>
-          <p className="text-gray-600 text-lg">We'd love to hear from you! Fill out the form below and we'll get back to you soon.</p>
+          <h2 className="text-5xl font-bold text-purple-300 mb-4">Get in Touch</h2>
+          <p className="bg-base-100 p-2 rounded-lg text-lg">We'd love to hear from you! Fill out the form below and we'll get back to you soon.</p>
         </div>
         
-        <div className="md:w-1/2 p-6 bg-gradient-to-br from-purple-500 to-pink-300">
+        <div className="md:w-1/2 p-6 bg-gradient-to-br from-purple-300 to-orange-400">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label className="block text-gray-700 font-semibold mb-2">Your Name</label>
@@ -79,7 +79,7 @@ const ContactUs = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="w-full bg-gradient-to-r from-indigo-600 to-blue-500 text-white py-3 rounded-lg hover:opacity-90 transition duration-300 text-xl font-semibold shadow-md flex items-center justify-center gap-3"
+              className="w-full bg-gradient-to-r from-purple-500 to-orange-600 text-white py-3 rounded-lg hover:opacity-90 transition duration-300 text-xl font-semibold shadow-md flex items-center justify-center gap-3"
             >
               <FaPaperPlane /> Send Message
             </motion.button>
