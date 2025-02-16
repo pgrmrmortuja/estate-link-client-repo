@@ -33,6 +33,7 @@ import UserProfile from "../Dashboard/Dashboard/User/UserProfile";
 import AdDetails from "../Pages/AdDetails";
 import FAQ from "../Layout/Home/FAQ";
 import Visitor from "../Dashboard/Dashboard/Admin/Visitor";
+import ContactUs from "../Pages/ContactUs";
 
 
 
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
             {
                 path: '/faq',
                 element: <FAQ></FAQ> ,
+            },
+            {
+                path: '/contact-us',
+                element: <ContactUs></ContactUs> ,
             },
             {
                 path: '/allProperties',
