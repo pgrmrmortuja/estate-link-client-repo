@@ -20,7 +20,7 @@ const UserProfile = () => {
     console.log(userInfo[0]?.role);
 
     return (
-        <div className=" flex flex-col justify-center items-center min-h-screen">
+        <div className="container mx-auto flex flex-col justify-center items-center min-h-screen">
             <Helmet>
                 <title>User Profile | EstateLink</title>
             </Helmet>

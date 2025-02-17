@@ -85,10 +85,10 @@ const MyAddedProperties = () => {
                                 <p><span className='font-bold'>Location:</span> {item.property_location}</p>
                                 <p><span className='font-bold'>Agent Name:</span> {item.agent_name}</p>
                                 <p><span className='font-bold'>Price Range:</span> ${item.price_range?.minimum_price} - ${item.price_range?.maximum_price}</p>
-                                <p><span className='font-bold'>Verification Status:</span> <span className='text-red-500'>{item.verification_status}</span></p>
+                                <p><span className='font-bold'>Verification Status:</span> <span className={`font-bold ${item.verification_status === 'verified' ? 'text-green-500' : 'text-red-500'}`}>{item.verification_status}</span></p>
                                 <div className="flex justify-between mt-4">
                                     <Link to={`/dashboard/updateProperty/${item._id}`}>
-                                        <button className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition">Update</button>
+                                        <button className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Update</button>
                                     </Link>
                                     <button onClick={() => handleDelete(item._id)} className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">Delete</button>
                                 </div>

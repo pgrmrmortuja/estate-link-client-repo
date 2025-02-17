@@ -60,7 +60,7 @@ const RequestedProperties = () => {
             <h1 className="text-4xl font-bold mb-10 text-center">Requested Properties</h1>
 
             <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table table-xs w-full">
                     <thead>
                         <tr>
                             <th className='text-center'>SL</th>
@@ -84,12 +84,12 @@ const RequestedProperties = () => {
                                 <td className='text-center'>
                                     {property.status === "pending" ? (
                                         <>
-                                            <button onClick={() => handleStatusChange(property._id, 'accepted', property.myPropertyId)} className='btn btn-success mr-2'>Accept</button>
+                                            <button onClick={() => handleStatusChange(property._id, 'accepted', property.myPropertyId)} className='btn btn-sm btn-success mr-2'>Accept</button>
 
-                                            <button onClick={() => handleStatusChange(property._id, 'rejected', property.myPropertyId)} className='btn btn-error'>Reject</button>
+                                            <button onClick={() => handleStatusChange(property._id, 'rejected', property.myPropertyId)} className='btn btn-sm btn-error'>Reject</button>
                                         </>
                                     ) : (
-                                        <span className={`font-bold ${property.status === 'accepted' ? 'text-pink-500' : 'text-red-500'}`}>{property.status}</span>
+                                        <span className={`font-bold ${property.status === 'accepted' ? 'text-green-500' : 'text-red-500'}`}>{property.status}</span>
                                     )}
                                 </td>
                             </tr>

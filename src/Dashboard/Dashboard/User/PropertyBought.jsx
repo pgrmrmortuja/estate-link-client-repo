@@ -52,7 +52,11 @@ const PropertyBought = () => {
 
                                     <p><span className='font-bold'>Offered Amount:</span> ${item.offer_amount}</p>
 
-                                    <p><span className='font-bold'>Verification Status:</span> <span className=''>
+                                    <p><span className='font-bold'>Verification Status:</span> <span
+                                        className={`px-2 py-1 rounded text-white 
+                                            ${item.status === "bought" ? "bg-green-500" :
+                                                item.status === "pending" ? "bg-yellow-500" :
+                                                    item.status === "rejected" ? "bg-red-500" : ""}`}>
                                         {item.status}</span> </p>
                                     <div className="card-actions mt-3 justify-between">
                                         {

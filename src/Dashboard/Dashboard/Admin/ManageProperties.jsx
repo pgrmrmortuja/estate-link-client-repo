@@ -80,8 +80,8 @@ const ManageProperties = () => {
                                 <td className='text-center'>
                                     {property.verification_status === "pending" ? (
                                         <>
-                                            <button onClick={() => handleStatusChange(property._id, 'verified')} className='btn btn-success mr-2'>Verify</button>
-                                            <button onClick={() => handleStatusChange(property._id, 'rejected')} className='btn btn-error'>Reject</button>
+                                            <button onClick={() => handleStatusChange(property._id, 'verified')} className='btn btn-success btn-sm mr-2'>Verify</button>
+                                            <button onClick={() => handleStatusChange(property._id, 'rejected')} className='btn btn-sm btn-error'>Reject</button>
                                         </>
                                     ) : (
                                         <span className={`font-bold ${property.verification_status === 'verified' ? 'text-green-500' : 'text-red-500'}`}>{property.verification_status}</span>

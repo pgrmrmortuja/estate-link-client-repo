@@ -94,7 +94,7 @@ const SignUp = () => {
             <Helmet>
                 <title>Sign Up | EstateLink</title>
             </Helmet>
-            <div className="card bg-pink-100 w-full max-w-lg shrink-0 p-10">
+            <div className="card bg-pink-100 shadow-2xl shadow-orange-400 w-full max-w-lg shrink-0 p-10">
                 <h2 className='text-2xl font-semibold text-center text-black'>Register Your Account</h2>
 
 
@@ -112,7 +112,7 @@ const SignUp = () => {
                         <label className="label">
                             <span className="label-text">Photo URL</span>
                         </label>
-                        <input type="text"  {...register("photoURL", { required: true })} placeholder="Photo URL" className="input input-bordered" />
+                        <input type="text"  {...register("photoURL", { required: true })} placeholder="Photo URL" className="input input-bordered bg-white" />
                         {errors.photoURL && <span className="text-red-600">Photo URL is required</span>}
                     </div>
                     <div className="form-control">
@@ -143,7 +143,7 @@ const SignUp = () => {
                         <button
                             type='button'
                             onClick={() => setShowPassword(!showPassword)}
-                            className='btn btn-xs absolute right-2 top-12'>
+                            className='btn btn-xs absolute right-2 top-12 bg-white'>
                             {
                                 showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
                             }

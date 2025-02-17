@@ -109,7 +109,7 @@ const AdvertiseProperties = () => {
                                     <button
                                         onClick={() => handleAdvertise(property)}
 
-                                        className='btn btn-success btn-xs mr-2 '
+                                        className='btn btn-success btn-sm mr-2 '
 
                                         disabled={advertisedIds.includes(property._id)}
                                     >

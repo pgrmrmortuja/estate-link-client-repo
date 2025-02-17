@@ -90,7 +90,7 @@ const Login = () => {
             <Helmet>
                 <title>Login | EstateLink</title>
             </Helmet>
-            <div className="card bg-pink-100 w-full max-w-lg shrink-0 p-10">
+            <div className="card bg-pink-100 shadow-2xl shadow-orange-400 w-full max-w-lg shrink-0 p-10">
                 <h2 className='text-2xl text-black font-semibold text-center'>Login Your Account</h2>
 
                 <form onSubmit={handleLogin} className="card-body">
