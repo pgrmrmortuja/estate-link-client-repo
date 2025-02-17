@@ -56,7 +56,7 @@ const ManageProperties = () => {
             <h1 className="text-4xl font-bold mb-10 text-center">Manage Properties</h1>
 
             <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table table-xs w-full">
                     <thead>
                         <tr>
                             <th className='text-center'>SL</th>
@@ -71,12 +71,12 @@ const ManageProperties = () => {
                     <tbody>
                         {properties.map((property, index) => (
                             <tr key={property._id}>
-                                <th>{index + 1}</th>
-                                <td>{property.property_title}</td>
-                                <td>{property.property_location}</td>
-                                <td>{property.agent_name}</td>
-                                <td>{property.agent_email}</td>
-                                <td>${property.price_range.minimum_price} - ${property.price_range.maximum_price}</td>
+                                <th className='text-center'>{index + 1}</th>
+                                <td className='text-center'>{property.property_title}</td>
+                                <td className='text-center'>{property.property_location}</td>
+                                <td className='text-center'>{property.agent_name}</td>
+                                <td className='text-center'>{property.agent_email}</td>
+                                <td className='text-center'>${property.price_range.minimum_price} - ${property.price_range.maximum_price}</td>
                                 <td className='text-center'>
                                     {property.verification_status === "pending" ? (
                                         <>
@@ -84,7 +84,7 @@ const ManageProperties = () => {
                                             <button onClick={() => handleStatusChange(property._id, 'rejected')} className='btn btn-error'>Reject</button>
                                         </>
                                     ) : (
-                                        <span className={`font-bold ${property.verification_status === 'verified' ? 'text-pink-500' : 'text-red-500'}`}>{property.verification_status}</span>
+                                        <span className={`font-bold ${property.verification_status === 'verified' ? 'text-green-500' : 'text-red-500'}`}>{property.verification_status}</span>
                                     )}
                                 </td>
                             </tr>

@@ -100,7 +100,7 @@ const ManageUsers = () => {
             <h1 className="text-4xl font-bold mb-10 text-center">Manage Users</h1>
 
             <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table table-xs w-full">
                     <thead>
                         <tr>
                             <th className='text-center'>SL</th>
@@ -113,9 +113,9 @@ const ManageUsers = () => {
                     <tbody>
                         {users.map((user, index) => (
                             <tr key={user._id}>
-                                <th>{index + 1}</th>
-                                <td>{user.name}</td>
-                                <td>{user.email}</td>
+                                <th className='text-center'>{index + 1}</th>
+                                <td className='text-center'>{user.name}</td>
+                                <td className='text-center'>{user.email}</td>
 
 
 
@@ -125,7 +125,7 @@ const ManageUsers = () => {
                                             (user.role === "User" || user.role === "Agent" || user.role === !"Fraud") ?
                                                 (
                                                     <button
-                                                        className='btn  bg-pink-500 text-black hover:text-pink-400 border-none '
+                                                        className='btn btn-sm bg-green-500 text-black hover:text-green-400 border-none '
                                                         onClick={() => handleRoleChange(user._id, 'Admin')}>
                                                         Make Admin
                                                     </button>
@@ -145,7 +145,7 @@ const ManageUsers = () => {
                                             (user.role === "User" || user.role === "Admin") ?
                                                 (
                                                     <button
-                                                        className='btn  bg-blue-500 text-black hover:text-blue-400 border-none '
+                                                        className='btn btn-sm  bg-blue-500 text-black hover:text-blue-400 border-none '
                                                         onClick={() => handleRoleChange(user._id, 'Agent')}>
                                                         Make Agent
                                                     </button>
@@ -164,7 +164,7 @@ const ManageUsers = () => {
                                             (user.role === "User" || user.role === "Agent") ?
                                                 (
                                                     <button
-                                                        className='btn  bg-yellow-500 text-black hover:text-yellow-400 border-none'
+                                                        className='btn btn-sm  bg-yellow-500 text-black hover:text-yellow-400 border-none'
                                                         onClick={() => handleRoleChange(user._id, 'Fraud')}>
                                                         Make as Fraud
                                                     </button>
@@ -178,10 +178,10 @@ const ManageUsers = () => {
                                     </div>
                                 </td>
 
-                                <td>
+                                <td className='text-center'>
                                     <button
                                         onClick={() => handleDelete(user._id, user.uid)}
-                                        className="btn  bg-red-500 text-black hover:text-red-400 border-none">Delete</button>
+                                        className="btn btn-sm bg-red-500 text-black hover:text-red-400 border-none">Delete</button>
                                 </td>
 
                             </tr>
