@@ -51,11 +51,11 @@ const SignUp = () => {
             .then(result => {
                 const loggedUser = result.user;
                 const uid = result.user?.uid;
-                console.log("jokhon user create holo",loggedUser);
-                console.log("user create uid",uid);
+                console.log("jokhon user create holo", loggedUser);
+                console.log("user create uid", uid);
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
-                        console.log("jokhon create hoye update holo",data);
+                        console.log("jokhon create hoye update holo", data);
                         //create user entry in the database
                         const userInfo = {
                             name: data.name,

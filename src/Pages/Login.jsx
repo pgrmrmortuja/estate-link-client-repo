@@ -117,7 +117,7 @@ const Login = () => {
                         <button
                             type='button'
                             onClick={() => setShowPassword(!showPassword)}
-                            className='btn btn-xs absolute right-2 top-12'>
+                            className='btn btn-xs absolute right-2 top-12  bg-white '>
                             {
                                 showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
                             }
