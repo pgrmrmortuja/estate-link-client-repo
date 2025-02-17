@@ -84,7 +84,7 @@ const ManageProperties = () => {
                                             <button onClick={() => handleStatusChange(property._id, 'rejected')} className='btn btn-error'>Reject</button>
                                         </>
                                     ) : (
-                                        <span className={`font-bold ${property.verification_status === 'verified' ? 'text-green-500' : 'text-red-500'}`}>{property.verification_status}</span>
+                                        <span className={`font-bold ${property.verification_status === 'verified' ? 'text-pink-500' : 'text-red-500'}`}>{property.verification_status}</span>
                                     )}
                                 </td>
                             </tr>

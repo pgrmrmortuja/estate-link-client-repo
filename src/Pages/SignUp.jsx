@@ -94,7 +94,7 @@ const SignUp = () => {
             <Helmet>
                 <title>Sign Up | EstateLink</title>
             </Helmet>
-            <div className="card bg-green-100 w-full max-w-lg shrink-0 p-10">
+            <div className="card bg-pink-100 w-full max-w-lg shrink-0 p-10">
                 <h2 className='text-2xl font-semibold text-center text-black'>Register Your Account</h2>
 
 
@@ -151,7 +151,7 @@ const SignUp = () => {
                     </div>
 
                     <div className="form-control mt-6">
-                        <button className="btn btn-neutral border-none bg-green-500 hover:bg-green-700 text-black">Register</button>
+                        <button className="btn btn-neutral border-none bg-pink-500 hover:bg-pink-700 text-black">Register</button>
                     </div>
                 </form>
 

@@ -87,7 +87,7 @@ const AdDetails = () => {
     return (
         <div className='container mx-auto p-4'>
             <h2 className="text-center text-3xl font-bold mb-5">Property Details</h2>
-            <div className="hero bg-base-200 border-2 border-green-500 p-5 sm:p-10 rounded-lg">
+            <div className="hero bg-base-200 border-2 border-pink-500 p-5 sm:p-10 rounded-lg">
                 <div className="hero-content flex flex-col md:flex-row items-center gap-5">
                     <img
                         src={property_image}
@@ -115,7 +115,7 @@ const AdDetails = () => {
 
                         <button
                             onClick={handleWishlist}
-                            className="btn bg-green-500 hover:bg-green-600 text-white mt-4"
+                            className="btn bg-pink-500 hover:bg-pink-600 text-white mt-4"
                         >
                             Add to Wishlist
                         </button>

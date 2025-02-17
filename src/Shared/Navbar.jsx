@@ -62,8 +62,8 @@ const Navbar = () => {
 
     const linkClass = ({ isActive }) =>
         isActive
-            ? " p-2 text-green-700 rounded-lg hover:bg-transparent font-bold text-lg"
-            : " p-2 rounded-lg hover:bg-transparent hover:text-green-500 hover:bg-green-300 font-bold text-lg text-black";
+            ? " p-2 text-pink-700 rounded-lg hover:bg-transparent font-bold text-lg"
+            : " p-2 rounded-lg hover:bg-transparent hover:text-pink-500 hover:bg-pink-300 font-bold text-lg text-black";
 
     const links = (
         <>
@@ -102,7 +102,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-green-200">
+        <nav className="bg-pink-200">
             <div className="navbar container mx-auto  px-4">
                 {/* Start Section */}
                 <div className="navbar-start">
@@ -129,7 +129,7 @@ const Navbar = () => {
                         </label>
                         <div
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content mt-3 z-[1] shadow rounded-box w-52 bg-green-100"
+                            className="menu menu-sm dropdown-content mt-3 z-[1] shadow rounded-box w-52 bg-pink-100"
                         >
 
                             {/*==========================================================  */}
@@ -166,7 +166,7 @@ const Navbar = () => {
                                 {user && user?.email ? (
                                     <button
                                         onClick={signOut}
-                                        className="btn text-black btn-neutral w-full bg-green-500 rounded-lg border-none hover:bg-green-700" data-tooltip-id="my-tooltip"
+                                        className="btn text-black btn-neutral w-full bg-pink-500 rounded-lg border-none hover:bg-pink-700" data-tooltip-id="my-tooltip"
                                         data-tooltip-content={"You Can Logout"}
                                         data-tooltip-place="top"
                                     >
@@ -176,7 +176,7 @@ const Navbar = () => {
                                     <div>
                                         <Link
                                             to="/login"
-                                            className="btn btn-neutral bg-green-500 rounded-lg border-none text-black hover:bg-green-700 mr-2"
+                                            className="btn btn-neutral bg-pink-500 rounded-lg border-none text-black hover:bg-pink-700 mr-2"
                                             data-tooltip-id="my-tooltip"
                                             data-tooltip-content={"Please Login"}
                                             data-tooltip-place="top"
@@ -185,7 +185,7 @@ const Navbar = () => {
                                         </Link>
                                         <Link
                                             to="/signup"
-                                            className="btn btn-neutral bg-green-500 rounded-lg border-none text-black hover:bg-green-700"
+                                            className="btn btn-neutral bg-pink-500 rounded-lg border-none text-black hover:bg-pink-700"
                                             data-tooltip-id="my-tooltip"
                                             data-tooltip-content={"Register If Not Account"}
                                             data-tooltip-place="top"
@@ -198,8 +198,8 @@ const Navbar = () => {
                         </div>
                     </div>
                     <Link to="/" className="flex justify-center items-center gap-2">
-                        <GiModernCity className="text-xl md:text-2xl text-green-600"></GiModernCity>
-                        <span className="text-xl md:text-2xl text-green-600 font-semibold">EstateLink</span>
+                        <GiModernCity className="text-xl md:text-2xl text-pink-600"></GiModernCity>
+                        <span className="text-xl md:text-2xl text-pink-600 font-semibold">EstateLink</span>
                     </Link>
                 </div>
 
@@ -245,7 +245,7 @@ const Navbar = () => {
                         <div tabIndex={0} role="" className="m-1">
                             {user && user?.email ? (
                                 <img
-                                    className="w-10 h-10 rounded-full border-2 border-green-500"
+                                    className="w-10 h-10 rounded-full border-2 border-pink-500"
                                     src={user?.photoURL}
                                     alt=""
 
@@ -265,9 +265,7 @@ const Navbar = () => {
                                 />
                             )}
                         </div>
-                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                            <li><a>{user?.displayName || "No logged User"}</a></li>
-                        </ul>
+                        
                     </div>
 
                     <div className="hidden lg:ml-2 lg:flex lg:items-center lg:gap-3">
@@ -275,7 +273,7 @@ const Navbar = () => {
                             {user && user?.email ? (
                                 <button
                                     onClick={signOut}
-                                    className="btn btn-neutral bg-green-500 rounded-lg border-none text-black hover:bg-green-700" data-tooltip-id="my-tooltip"
+                                    className="btn btn-neutral bg-pink-500 rounded-lg border-none text-black hover:bg-pink-700" data-tooltip-id="my-tooltip"
                                     data-tooltip-content={"You Can Logout"}
                                     data-tooltip-place="top"
                                 >
@@ -285,7 +283,7 @@ const Navbar = () => {
                                 <div>
                                     <Link
                                         to="/login"
-                                        className="btn btn-neutral bg-green-500 rounded-lg border-none hover:bg-green-700 text-black mr-2"
+                                        className="btn btn-neutral bg-pink-500 rounded-lg border-none hover:bg-pink-700 text-black mr-2"
                                         data-tooltip-id="my-tooltip"
                                         data-tooltip-content={"Please Login"}
                                         data-tooltip-place="top"
@@ -294,7 +292,7 @@ const Navbar = () => {
                                     </Link>
                                     <Link
                                         to="/signup"
-                                        className="btn btn-neutral bg-green-500 rounded-lg border-none hover:bg-green-700 text-black"
+                                        className="btn btn-neutral bg-pink-500 rounded-lg border-none hover:bg-pink-700 text-black"
                                         data-tooltip-id="my-tooltip"
                                         data-tooltip-content={"Register If Not Account"}
                                         data-tooltip-place="top"

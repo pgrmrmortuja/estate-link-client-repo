@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-blue-100 text-black">
+        <footer className="bg-pink-200 text-black">
             <div className="container mx-auto px-4 py-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {/* Company Info */}
                     <div>
                         <Link to="/" className="flex  items-center gap-2">
-                            <GiModernCity className="text-xl md:text-2xl text-green-600"></GiModernCity>
-                            <span className="text-xl md:text-2xl text-green-600 font-semibold">EstateLink</span>
+                            <GiModernCity className="text-xl md:text-2xl text-pink-600"></GiModernCity>
+                            <span className="text-xl md:text-2xl text-pink-600 font-semibold">EstateLink</span>
                         </Link>
                         <p className="text-sm">
                             Your trusted platform for buying, selling, and managing real estate properties effortlessly and securely.

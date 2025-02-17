@@ -70,7 +70,7 @@ const MyAddedProperties = () => {
                                     <img
                                         src={item.agent_image}
                                         alt={item.agent_name}
-                                        className="rounded-full border-4 border-green-400 w-16 h-16 sm:w-20 sm:h-20 object-cover" />
+                                        className="rounded-full border-4 border-pink-400 w-16 h-16 sm:w-20 sm:h-20 object-cover" />
                                 </div>
                             </div>
 
@@ -88,7 +88,7 @@ const MyAddedProperties = () => {
                                 <p><span className='font-bold'>Verification Status:</span> <span className='text-red-500'>{item.verification_status}</span></p>
                                 <div className="flex justify-between mt-4">
                                     <Link to={`/dashboard/updateProperty/${item._id}`}>
-                                        <button className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Update</button>
+                                        <button className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition">Update</button>
                                     </Link>
                                     <button onClick={() => handleDelete(item._id)} className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">Delete</button>
                                 </div>

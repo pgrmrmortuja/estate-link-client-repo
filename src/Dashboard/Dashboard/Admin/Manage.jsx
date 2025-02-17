@@ -58,7 +58,7 @@ const Manage = () => {
     // const getStatusClass = (status) => {
     //     switch (status) {
     //         case 'verified':
-    //             return 'text-green-500 font-bold'; // Green color for verified
+    //             return 'text-pink-500 font-bold'; // pink color for verified
     //         case 'rejected':
     //             return 'text-red-500 font-bold'; // Red color for rejected
     //         default:
@@ -114,7 +114,7 @@ const Manage = () => {
                                             // Show status after button click
                                             <span
                                                 className={`font-bold ${propertyStatus[property._id] === 'verified'
-                                                    ? 'text-green-500'
+                                                    ? 'text-pink-500'
                                                     : 'text-red-500'
                                                     }`}
                                             >

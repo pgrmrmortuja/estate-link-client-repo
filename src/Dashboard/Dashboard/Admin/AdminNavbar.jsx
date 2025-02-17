@@ -7,14 +7,14 @@ const AdminNavbar = ({ isOpen, setIsOpen }) => {
 
     const linkClass = ({ isActive }) =>
         isActive
-            ? "p-2 text-green-700 rounded-lg hover:bg-transparent font-bold text-lg text-left"
-            : "p-2 rounded-lg text-blue-500 hover:bg-transparent hover:text-green-500 hover:bg-green-300 font-bold text-lg text-left";
+            ? "p-2 text-pink-700 rounded-lg hover:bg-transparent font-bold text-lg text-left"
+            : "p-2 rounded-lg text-blue-500 hover:bg-transparent hover:text-pink-500 hover:bg-pink-300 font-bold text-lg text-left";
 
     return (
         <div>
             {/* Hamburger Icon */}
             <button
-                className="p-3 fixed top-4 left-4 z-50 bg-gray-800 text-white rounded-md"
+                className="p-3 fixed top-4 left-4 z-50 bg-pink-600 text-white rounded-md"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -22,7 +22,7 @@ const AdminNavbar = ({ isOpen, setIsOpen }) => {
 
             {/* Sidebar */}
             <div
-                className={`fixed top-0 left-0 h-full bg-gray-900 text-white p-5 transition-transform duration-300 
+                className={`fixed top-0 left-0 h-full bg-pink-300 text-white p-5 transition-transform duration-300 
                     ${isOpen ? "translate-x-0" : "-translate-x-64"}`}
             >
                 <h2 className={`text-2xl font-bold mb-6 mt-14 transition-opacity ${isOpen ? 'opacity-100' : 'opacity-0'}`}>
@@ -35,7 +35,7 @@ const AdminNavbar = ({ isOpen, setIsOpen }) => {
                     <li><NavLink to="manageReviews" className={linkClass}>Manage Reviews</NavLink></li>
                     <li><NavLink to="advertise" className={linkClass}>Advertise Properties</NavLink></li>
                     <li><NavLink to="visitor" className={linkClass}>Visitor</NavLink></li>
-                    <li><NavLink to="/" className="p-2 rounded-lg text-orange-500 hover:bg-transparent hover:text-green-500 hover:bg-green-300 font-bold text-lg text-left">Back to Home</NavLink></li>
+                    <li><NavLink to="/" className="p-2 rounded-lg text-orange-500 hover:bg-transparent hover:text-pink-500 hover:bg-pink-300 font-bold text-lg text-left">Back to Home</NavLink></li>
                 </ul>
             </div>
         </div>

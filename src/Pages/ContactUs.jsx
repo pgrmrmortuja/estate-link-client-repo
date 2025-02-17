@@ -33,14 +33,14 @@ const ContactUs = () => {
         className="w-full p-12 rounded-3xl shadow-2xl shadow-orange-400 flex flex-col md:flex-row "
       >
         <div className="md:w-1/2 flex flex-col justify-center text-center md:text-left p-6">
-          <h2 className="text-5xl font-bold text-purple-300 mb-4">Get in Touch</h2>
+          <h2 className="text-5xl font-bold text-pink-500 mb-4">Get in Touch</h2>
           <p className="bg-base-100 p-2 rounded-lg text-lg">We'd love to hear from you! Fill out the form below and we'll get back to you soon.</p>
         </div>
         
-        <div className="md:w-1/2 p-6 bg-gradient-to-br from-purple-300 to-orange-400">
+        <div className="md:w-1/2 p-6 rounded-lg bg-gradient-to-br from-purple-300 to-orange-400">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label className="block text-gray-700 font-semibold mb-2">Your Name</label>
+              <label className="block text-black font-semibold mb-2">Your Name</label>
               <input
                 type="text"
                 name="name"
@@ -52,7 +52,7 @@ const ContactUs = () => {
               />
             </div>
             <div>
-              <label className="block text-gray-700 font-semibold mb-2">Email Address</label>
+              <label className="block text-black font-semibold mb-2">Email Address</label>
               <input
                 type="email"
                 name="email"
@@ -64,7 +64,7 @@ const ContactUs = () => {
               />
             </div>
             <div>
-              <label className="block text-gray-700 font-semibold mb-2">Your Message</label>
+              <label className="block text-black font-semibold mb-2">Your Message</label>
               <textarea
                 name="message"
                 value={formData.message}

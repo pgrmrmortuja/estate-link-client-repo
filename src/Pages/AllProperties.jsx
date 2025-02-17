@@ -69,14 +69,14 @@ const AllProperties = () => {
 
 
             {/* Properties Grid */}
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+            <div className='shadow-2xl shadow-pink-400 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
                 {sortedProperties.map(item => (
                     <div key={item._id} className="card border border-gray-200 bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg">
                         <div className='relative flex justify-center pt-5'>
                             <img
                                 src={item.agent_image}
                                 alt={item.agent_name}
-                                className="rounded-full border-4 border-green-400 w-16 h-16 shadow-md"
+                                className="rounded-full border-4 border-pink-400 w-16 h-16 shadow-md"
                             />
                         </div>
 
@@ -98,7 +98,7 @@ const AllProperties = () => {
                             </p>
                             <div className="card-actions mt-4">
                                 <Link to={`/propertyDetails/${item._id}`} className="w-full">
-                                    <button className="btn bg-green-500 text-white hover:bg-green-600 transition w-full py-2 rounded-lg">Details</button>
+                                    <button className="btn bg-pink-500 text-white hover:bg-pink-600 transition w-full py-2 rounded-lg">Details</button>
                                 </Link>
                             </div>
                         </div>

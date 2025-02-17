@@ -31,7 +31,7 @@ const LimitAd = () => {
                 {limits.map((limit, index) => (
                     <motion.div
                         key={limit._id}
-                        className="card border-2 border-green-500 bg-base-100 shadow-xl"
+                        className="card border-2 border-pink-500 bg-base-100 shadow-xl"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -49,14 +49,14 @@ const LimitAd = () => {
                             <p>Location: {limit.property_location}</p>
                             <p><span className='font-bold'>Price Range:</span> ${limit.price_range.minimum_price} to ${limit.price_range.maximum_price}</p>
                             <p>
-                                <span className='font-bold'>Status:</span>
+                                <span className='font-bold mr-2'>Status:</span>
                                 <span className='text-green-500 border-2 border-green-500 rounded-lg p-1'>
                                     {limit.verification_status}
                                 </span>
                             </p>
                             <div className="card-actions mt-3 justify-start w-full">
                                 <Link className='w-full' to={`/propertyDetails/${limit._id}`}>
-                                    <button className="btn bg-green-500 text-black hover:text-green-400 border-none w-full">
+                                    <button className="btn bg-pink-500 text-black hover:text-pink-400 border-none w-full">
                                         Details
                                     </button>
                                 </Link>

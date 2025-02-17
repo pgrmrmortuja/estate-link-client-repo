@@ -125,7 +125,7 @@ const ManageUsers = () => {
                                             (user.role === "User" || user.role === "Agent" || user.role === !"Fraud") ?
                                                 (
                                                     <button
-                                                        className='btn  bg-green-500 text-black hover:text-green-400 border-none '
+                                                        className='btn  bg-pink-500 text-black hover:text-pink-400 border-none '
                                                         onClick={() => handleRoleChange(user._id, 'Admin')}>
                                                         Make Admin
                                                     </button>
@@ -133,7 +133,7 @@ const ManageUsers = () => {
                                                 :
                                                 (
                                                     user.role === "Admin" &&
-                                                    <span className='text-green-400 border-2 border-green-400 rounded-xl p-2'>{user.role}</span>
+                                                    <span className='text-pink-400 border-2 border-pink-400 rounded-xl p-2'>{user.role}</span>
                                                 )
                                         }
                                     </div>

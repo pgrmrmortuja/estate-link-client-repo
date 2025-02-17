@@ -61,7 +61,7 @@ const cardData = [
         icon: <FaUserTie />,
         title: "Trusted Agents",
         description: "Work with experienced and verified real estate agents dedicated to guiding you through every step.",
-        color: "text-green-500"
+        color: "text-pink-500"
     },
     {
         icon: <FaHandshake />,

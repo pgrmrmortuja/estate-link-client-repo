@@ -17,7 +17,7 @@ const AboutUs = () => {
 
     return (
         <div className="py-12 px-6" ref={ref}>
-            <div className="max-w-6xl mx-auto text-center">
+            <div className="max-w-6xl mx-auto text-center ">
                 {/* Title Section with Fade-in & Slide-in Effect */}
                 <motion.h2
                     initial={{ opacity: 0, y: 50 }}
@@ -57,8 +57,8 @@ const AboutUs = () => {
                                     style={{ backgroundColor: color }}
                                 >
                                     {icon}
-                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">{title}</h3>
-                                    <p className="text-gray-600">{description}</p>
+                                    <h3 className="text-xl font-semibold mb-3">{title}</h3>
+                                    <p className="">{description}</p>
                                 </motion.div>
                             );
                         })}

@@ -55,7 +55,7 @@ const FAQ = () => {
                     {faqData.map((faq) => (
                         <div
                             key={faq.id}
-                            className="bg-blue-100 rounded-lg shadow-md p-4 transition-all duration-300"
+                            className="bg-pink-100 rounded-lg shadow-md p-4 transition-all duration-300 shadow-2xl shadow-orange-400"
                         >
                             <div
                                 className="flex justify-between items-center cursor-pointer"

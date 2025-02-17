@@ -89,7 +89,7 @@ const RequestedProperties = () => {
                                             <button onClick={() => handleStatusChange(property._id, 'rejected', property.myPropertyId)} className='btn btn-error'>Reject</button>
                                         </>
                                     ) : (
-                                        <span className={`font-bold ${property.status === 'accepted' ? 'text-green-500' : 'text-red-500'}`}>{property.status}</span>
+                                        <span className={`font-bold ${property.status === 'accepted' ? 'text-pink-500' : 'text-red-500'}`}>{property.status}</span>
                                     )}
                                 </td>
                             </tr>

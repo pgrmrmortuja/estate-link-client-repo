@@ -104,7 +104,7 @@ const MakeOffer = () => {
             <Helmet>
                 <title>Make Offer | EstateLink</title>
             </Helmet>
-            <form onSubmit={handleOffer} className="w-full max-w-lg bg-green-100 p-8 rounded-lg shadow-lg space-y-6">
+            <form onSubmit={handleOffer} className="w-full max-w-lg bg-pink-100 p-8 rounded-lg shadow-lg space-y-6">
                 <h2 className="text-3xl font-bold text-center text-black mb-10">Make An Offer</h2>
 
                 {/* Property Title (Read-only) */}
@@ -212,7 +212,7 @@ const MakeOffer = () => {
 
                 <button
                     type="submit"
-                    className="w-full font-bold py-3 rounded-lg items-center btn  bg-green-500 text-black hover:text-green-400 border-none"
+                    className="w-full font-bold py-3 rounded-lg items-center btn  bg-pink-500 text-black hover:text-pink-400 border-none"
                 >
                     Make Offer
                 </button>

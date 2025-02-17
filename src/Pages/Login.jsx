@@ -90,7 +90,7 @@ const Login = () => {
             <Helmet>
                 <title>Login | EstateLink</title>
             </Helmet>
-            <div className="card bg-green-100 w-full max-w-lg shrink-0 p-10">
+            <div className="card bg-pink-100 w-full max-w-lg shrink-0 p-10">
                 <h2 className='text-2xl text-black font-semibold text-center'>Login Your Account</h2>
 
                 <form onSubmit={handleLogin} className="card-body">
@@ -125,7 +125,7 @@ const Login = () => {
 
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-neutral border-none bg-green-500 hover:bg-green-700 text-black">Login</button>
+                        <button className="btn btn-neutral border-none bg-pink-500 hover:bg-pink-700 text-black">Login</button>
                     </div>
                 </form>
 
