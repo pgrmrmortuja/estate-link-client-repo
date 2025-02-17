@@ -10,6 +10,8 @@ import { useQuery } from "@tanstack/react-query";
 import { jwtDecode } from "jwt-decode";
 import axios from "axios";
 import useTrackVisit from "../hooks/useTrackVisit";
+import { FaKey } from "react-icons/fa";
+import { GiModernCity } from "react-icons/gi";
 
 
 const Navbar = () => {
@@ -195,8 +197,9 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <Link to="/" className="text-xl md:text-2xl text-green-600 font-semibold">
-                        EstateLink
+                    <Link to="/" className="flex justify-center items-center gap-2">
+                        <GiModernCity className="text-xl md:text-2xl text-green-600"></GiModernCity>
+                        <span className="text-xl md:text-2xl text-green-600 font-semibold">EstateLink</span>
                     </Link>
                 </div>
 
