@@ -2,8 +2,11 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import { motion } from "framer-motion";
 import { FaPaperPlane } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const ContactUs = () => {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
   const handleChange = (e) => {
@@ -14,6 +17,8 @@ const ContactUs = () => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
     setFormData({ name: "", email: "", message: "" });
+
+    navigate("/");
     
     Swal.fire({
       title: "Message Sent!",

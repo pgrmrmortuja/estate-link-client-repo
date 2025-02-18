@@ -67,7 +67,7 @@ const Wishlist = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-5'>
                     {
                         properties.map(item =>
-                            <div key={item._id} className="border-2 border-pink-400 card bg-white shadow-lg rounded-lg transform transition duration-300 hover:scale-105">
+                            <div key={item._id} className="mt-10 border-2 border-pink-400 card bg-white shadow-lg rounded-lg transform transition duration-300 hover:scale-105">
 
                                 <div className='relative'>
                                     <div className='absolute -top-10 left-1/2 transform -translate-x-1/2'>
@@ -91,7 +91,7 @@ const Wishlist = () => {
 
                                     <p><span className='font-bold'>Price Range:</span> ${item?.price_range?.minimum_price} to ${item?.price_range?.maximum_price}</p>
 
-                                    <p><span className='font-bold'>Status:</span> <span className='text-pink-500 border-2 border-pink-500 rounded-lg p-1'>
+                                    <p><span className='font-bold'>Status:</span> <span className='text-green-500 border-2 border-green-500 rounded-lg p-1'>
                                         {"verified"}</span> </p>
 
                                     <div className="card-actions mt-3 justify-between">

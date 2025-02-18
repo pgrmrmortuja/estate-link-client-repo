@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../../providers/AuthProvider';
 import useAxiosPublic from '../../../hooks/useAxiosPublic';
@@ -20,6 +20,7 @@ const UpdateProperty = () => {
     const { register, handleSubmit } = useForm();
     const axiosPublic = useAxiosPublic();
     const axiosSecure = useAxiosSecure();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchProperty = async () => {
@@ -100,6 +101,7 @@ const UpdateProperty = () => {
             const propertyRes = await axiosSecure.put(`/property-id/${_id}`, property);
 
             if (propertyRes.data.modifiedCount > 0 || propertyRes.data.acknowledged) {
+                navigate("/dashboard/MyAddedProperties");
                 Swal.fire({
                     position: "top",
                     icon: "success",

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
 import Swal from 'sweetalert2';
 import Review from './Review';
@@ -13,6 +13,7 @@ const Details = () => {
     const { user } = useContext(AuthContext);
     const axiosSecure = useAxiosSecure();
     const userEmail = user?.email;
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchProperty = async () => {
@@ -73,6 +74,7 @@ const Details = () => {
             const propertyRes = await axiosSecure.post('/wishlists', myProperty);
 
             if (propertyRes.data.insertedId) {
+                navigate("/allProperties");
                 Swal.fire({
                     position: "top",
                     icon: "success",

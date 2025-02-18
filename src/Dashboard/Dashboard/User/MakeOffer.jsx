@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import useAuth from '../../../hooks/useAuth';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
@@ -11,6 +11,7 @@ const MakeOffer = () => {
     const [property, setProperty] = useState({});
     const [offerPrice, setOfferPrice] = useState('');
     const axiosSecure = useAxiosSecure();
+    const navigate = useNavigate();
 
     useEffect(() => {
         axiosSecure.get(`/wishlist-id/${id}`)
@@ -78,6 +79,7 @@ const MakeOffer = () => {
             console.log('Property Response:', propertyRes.data);
 
             if (propertyRes.data.insertedId) {
+                navigate("/dashboard/wishlist");
                 Swal.fire({
                     position: "top",
                     icon: "success",

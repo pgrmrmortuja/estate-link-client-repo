@@ -104,6 +104,7 @@ const CheckoutForm = ({ myProperty }) => {
                     const res = await axiosSecure.post("/payments", payment);
 
                     if (res.data?.success) {
+                        navigate("/dashboard/propertyBought");
                         Swal.fire({
                             position: "top",
                             icon: "success",
@@ -112,7 +113,7 @@ const CheckoutForm = ({ myProperty }) => {
                             showConfirmButton: false,
                             timer: 2000,
                         });
-                        // navigate("/dashboard/paymentHistory");
+                        
                     }
                 } catch (error) {
                     if (error.response?.status === 400) {

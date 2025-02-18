@@ -19,9 +19,9 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [disabled, setDisabled] = useState(true);
     const { signIn, googleSignIn, setUser, user } = useAuth();
+
     const navigate = useNavigate();
     const location = useLocation;
-
     const from = location.state?.from?.pathname || "/";
 
 
