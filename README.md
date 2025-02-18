@@ -5,11 +5,10 @@ Welcome to **EstateLink**, a modern and feature-rich real estate platform where 
 ---
 
 ## 🌐 Live Website
-[🔗 EstateLink Live Site](https://estatelink.netlify.app/) *(Replace with your live site URL)*
-
+[🔗 EstateLink Live Site](https://estatelink.netlify.app/) 
 ## 🔑 Admin Credentials
-- **Username:** a@b.com
-- **Password:** AAaa123456@ *(Change after deployment for security)*
+- **Admin Username:** a@b.com
+- **Password:** AAaa123456@ *(Change the password after deployment for security)*
 
 ---
 
