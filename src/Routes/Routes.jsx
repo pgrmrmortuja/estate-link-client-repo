@@ -68,7 +68,7 @@ export const router = createBrowserRouter([
             // {
             //     path: '/details/:id',
             //     element: <PrivateRoute><AdDetails></AdDetails></PrivateRoute> ,
-            //     loader: ({ params }) => fetch(`http://localhost:5000/ad-details/${params.id}`),
+            //     loader: ({ params }) => fetch(`https://estatelink-server.vercel.app/ad-details/${params.id}`),
             // },
             {
                 path: '/login',
@@ -126,7 +126,7 @@ export const router = createBrowserRouter([
             {
                 path: 'updateProperty/:id',
                 element: <AgentRoute><UpdateProperty></UpdateProperty></AgentRoute> ,
-                // loader: ({ params }) => fetch(`http://localhost:5000/property-id/${params.id}`),
+                // loader: ({ params }) => fetch(`https://estatelink-server.vercel.app/property-id/${params.id}`),
             },
             {
                 path: 'soldProperties',
@@ -157,12 +157,12 @@ export const router = createBrowserRouter([
             {
                 path: 'makeOffer/:id',
                 element: <UserRoute><MakeOffer></MakeOffer></UserRoute>,
-                // loader: ({ params }) => fetch(`http://localhost:5000/wishlist-id/${params.id}`),
+                // loader: ({ params }) => fetch(`https://estatelink-server.vercel.app/wishlist-id/${params.id}`),
             },
             {
                 path: 'payment/:id',
                 element: <UserRoute><Payment></Payment></UserRoute>,
-                // loader: ({ params }) => fetch(`http://localhost:5000/user-offers-id/${params.id}`),
+                // loader: ({ params }) => fetch(`https://estatelink-server.vercel.app/user-offers-id/${params.id}`),
             },
             
         ]
