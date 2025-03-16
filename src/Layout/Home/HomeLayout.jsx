@@ -18,11 +18,6 @@ const HomeLayout = () => {
             <Choose></Choose>
             <LimitAd></LimitAd>
             <LatestReview></LatestReview>
-            {/* <Banner></Banner>
-            <Category></Category>
-            <PopularMenu></PopularMenu>
-            <Featured></Featured>
-            <Testimonials></Testimonials> */}
         </div>
     );
 };

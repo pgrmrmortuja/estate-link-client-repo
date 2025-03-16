@@ -97,7 +97,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-pink-200 bg-opacity-30 z-50 sticky top-0 w-full">
+        <nav className="bg-pink-300 bg-opacity-30 z-50 sticky top-0 w-full">
             <div className="navbar container mx-auto  px-4">
                 {/* Start Section */}
                 <div className="navbar-start">
