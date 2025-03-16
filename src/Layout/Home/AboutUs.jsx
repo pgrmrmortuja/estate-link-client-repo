@@ -17,7 +17,7 @@ const AboutUs = () => {
 
     return (
         <div className="py-12 px-6" ref={ref}>
-            <div className="max-w-6xl mx-auto text-center ">
+            <div className="text-center ">
                 {/* Title Section with Fade-in & Slide-in Effect */}
                 <motion.h2
                     initial={{ opacity: 0, y: 50 }}

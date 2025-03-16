@@ -7,7 +7,7 @@ const Choose = () => {
     const isInView = useInView(ref, { triggerOnce: false });
 
     return (
-        <div className='mx-auto w-11/12 mb-16' ref={ref}>
+        <div className='mb-16' ref={ref}>
             {/* Title Section with Fade-in & Slide-in Effect */}
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
