@@ -16,11 +16,6 @@ import { GiModernCity } from "react-icons/gi";
 
 const Navbar = () => {
 
-
-    // useTrackVisit();
-
-
-
     const { user, logOut } = useContext(AuthContext);
 
     const navigate = useNavigate();
