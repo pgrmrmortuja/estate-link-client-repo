@@ -35,7 +35,7 @@ createRoot(document.getElementById('root')).render(
     <AuthProvider>
       <QueryClientProvider client={queryClient}>
         <HelmetProvider>
-          <div className='max-w-screen-xl mx-auto'>
+          <div className='max-w-screen-xl mx-auto overflow-clip'>
             <RouterProvider router={router} />
           </div>
           <TrackVisit />
