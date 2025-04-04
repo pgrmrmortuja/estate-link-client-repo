@@ -13,7 +13,7 @@ const MainLayout = () => {
 
 
     return (
-        <div className=''>
+        <div className='flex flex-col '>
             {noHeaderFooter || <Navbar></Navbar>}
 
             <main className=" w-11/12 mx-auto">
