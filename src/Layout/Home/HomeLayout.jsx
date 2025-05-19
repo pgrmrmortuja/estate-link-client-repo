@@ -6,6 +6,8 @@ import AboutUs from './AboutUs';
 import Choose from './Choose';
 import Slider from './Slider';
 import Steps from './Steps';
+import Mission from './Mission';
+import TeamSection from './TeamSection';
 
 const HomeLayout = () => {
     return (
@@ -16,6 +18,8 @@ const HomeLayout = () => {
             
             <Slider></Slider>
             <Steps></Steps>
+            <TeamSection></TeamSection>
+            <Mission></Mission>
             <AboutUs></AboutUs>
             <Choose></Choose>
             <LimitAd></LimitAd>
