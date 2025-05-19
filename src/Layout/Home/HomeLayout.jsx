@@ -8,6 +8,7 @@ import Slider from './Slider';
 import Steps from './Steps';
 import Mission from './Mission';
 import TeamSection from './TeamSection';
+import Awards from './Awards';
 
 const HomeLayout = () => {
     return (
@@ -19,6 +20,7 @@ const HomeLayout = () => {
             <Slider></Slider>
             <Steps></Steps>
             <TeamSection></TeamSection>
+            <Awards></Awards>
             <Mission></Mission>
             <AboutUs></AboutUs>
             <Choose></Choose>
