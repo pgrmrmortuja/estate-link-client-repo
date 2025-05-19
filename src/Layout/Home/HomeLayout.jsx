@@ -19,12 +19,12 @@ const HomeLayout = () => {
             </Helmet>
             
             <Slider></Slider>
-            <Steps></Steps>
-            <Success></Success>
-            <TeamSection></TeamSection>
-            <Awards></Awards>
-            <Mission></Mission>
             <AboutUs></AboutUs>
+            <Steps></Steps>
+            <Mission></Mission>
+            <TeamSection></TeamSection>
+            <Success></Success>
+            <Awards></Awards>
             <Choose></Choose>
             <LimitAd></LimitAd>
             <LatestReview></LatestReview>
