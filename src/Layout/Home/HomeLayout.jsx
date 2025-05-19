@@ -5,6 +5,7 @@ import LatestReview from './LatestReview';
 import AboutUs from './AboutUs';
 import Choose from './Choose';
 import Slider from './Slider';
+import Steps from './Steps';
 
 const HomeLayout = () => {
     return (
@@ -14,6 +15,7 @@ const HomeLayout = () => {
             </Helmet>
             
             <Slider></Slider>
+            <Steps></Steps>
             <AboutUs></AboutUs>
             <Choose></Choose>
             <LimitAd></LimitAd>
