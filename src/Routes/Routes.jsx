@@ -28,6 +28,7 @@ import AdminRoute from "./AdminRoute";
 import AgentRoute from "./AgentRoute";
 import UserRoute from "./UserRoute";
 import AdminProfile from "../Dashboard/Dashboard/Admin/AdminProfile";
+import Count from "../Dashboard/Dashboard/Admin/Count";
 import AgentProfile from "../Dashboard/Dashboard/Agent/AgentProfile";
 import UserProfile from "../Dashboard/Dashboard/User/UserProfile";
 import AdDetails from "../Pages/AdDetails";
@@ -56,6 +57,10 @@ export const router = createBrowserRouter([
                 path: '/contact-us',
                 element: <ContactUs></ContactUs> ,
             },
+            // {
+            //     path: '/visitor',
+            //     element: <Count></Count> ,
+            // },
             {
                 path: '/allProperties',
                 element: <PrivateRoute><AllProperties></AllProperties></PrivateRoute> ,
@@ -107,7 +112,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'visitor',
-                element: <AdminRoute><Visitor></Visitor></AdminRoute>,
+                element: <AdminRoute><Count></Count></AdminRoute>,
             },
 
             //Agent

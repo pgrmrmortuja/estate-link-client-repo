@@ -17,7 +17,7 @@ const DashboardLayout = () => {
     }
 
     return (
-        <div className="w-11/12 mx-auto flex transition-all duration-300">
+        <div className="w-10/12 mx-auto flex transition-all duration-300">
             {/* Navbar */}
             <div>
                 {role === 'Admin' && <AdminNavbar isOpen={isOpen} setIsOpen={setIsOpen} />}
@@ -26,7 +26,7 @@ const DashboardLayout = () => {
             </div>
 
             {/* Main Content */}
-            <div className={`container mx-auto transition-all duration-300 ${isOpen ? 'ml-64' : 'ml-16'}`}>
+            <div className={`w-11/12 mx-auto transition-all duration-300 ${isOpen ? 'ml-64' : 'ml-16'}`}>
                 <Outlet />
             </div>
         </div>

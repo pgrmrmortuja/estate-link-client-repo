@@ -87,6 +87,9 @@ const Navbar = () => {
             <NavLink to="/faq" className={linkClass} >
                 FAQ
             </NavLink>
+            {/* <NavLink to="/visitor" className={linkClass} >
+                Visitors
+            </NavLink> */}
         </>
     );
 
