@@ -26,17 +26,17 @@ const steps = [
 
 const Steps = () => {
   return (
-    <section className="bg-gray-50 py-12 px-4 md:px-8 lg:px-16">
-      <h2 className="text-3xl font-bold text-center mb-10">How It Works</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section className="mb-20">
+      <h2 className="text-center text-4xl font-bold p-2 mb-10">How It Works</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
         {steps.map((step, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg p-6 text-center transition duration-300"
+            className="p-6 text-center bg-base-100 shadow-xl"
           >
             {step.icon}
             <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-            <p className="text-gray-600">{step.description}</p>
+            <p className="">{step.description}</p>
           </div>
         ))}
       </div>

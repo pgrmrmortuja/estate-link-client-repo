@@ -31,7 +31,7 @@ const LimitAd = () => {
                 {limits.map((limit, index) => (
                     <motion.div
                         key={limit._id}
-                        className="card border-2 border-pink-500 bg-base-100 shadow-xl"
+                        className="card  bg-base-100 shadow-xl"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: index * 0.2 }}

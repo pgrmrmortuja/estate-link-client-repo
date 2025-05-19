@@ -31,7 +31,7 @@ const LatestReview = () => {
                     reviews.map((review, index) => (
                         <motion.div 
                             key={review._id} 
-                            className="border p-4 rounded-lg shadow-md"
+                            className="bg-base-100 shadow-xl p-4 rounded-lg"
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: index * 0.2 }}

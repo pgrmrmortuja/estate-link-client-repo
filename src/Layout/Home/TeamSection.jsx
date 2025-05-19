@@ -38,54 +38,54 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="bg-white py-16 px-4 md:px-16">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
-          Meet Our Team
-        </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="group bg-gray-100 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
-            >
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  {member.name}
-                </h3>
-                <p className="text-gray-500 mb-2">{member.role}</p>
+    <div className="text-center mb-20">
+      <h2 className="text-center text-4xl font-bold p-2 mb-10">
+        Meet Our Team
+      </h2>
 
-                <div className="flex justify-center gap-4 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a href={member.fb} target="_blank" rel="noopener noreferrer">
-                    <FaFacebook className="text-blue-600 hover:text-blue-800 text-xl" />
-                  </a>
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaLinkedin className="text-blue-700 hover:text-blue-900 text-xl" />
-                  </a>
-                  <a
-                    href={member.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaTwitter className="text-sky-500 hover:text-sky-700 text-xl" />
-                  </a>
-                </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        {teamMembers.map((member, index) => (
+          <div
+            key={index}
+            className="group rounded-xl bg-base-100 shadow-xl overflow-hidden"
+          >
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-full h-64 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold text-gray-800">
+                {member.name}
+              </h3>
+              <p className="text-gray-500 mb-2">{member.role}</p>
+
+              <div className="flex justify-center gap-4 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <a href={member.fb} target="_blank" rel="noopener noreferrer">
+                  <FaFacebook className="text-blue-600 hover:text-blue-800 text-xl" />
+                </a>
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="text-blue-700 hover:text-blue-900 text-xl" />
+                </a>
+                <a
+                  href={member.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter className="text-sky-500 hover:text-sky-700 text-xl" />
+                </a>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
+
   );
 };
 

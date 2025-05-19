@@ -26,27 +26,27 @@ const items = [
 
 const Mission = () => {
   return (
-    <section className="bg-white py-16 px-4 md:px-16">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
-          Our Mission & Vision
-        </h2>
+    <section className="mb-20">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {items.map((item, index) => (
-            <div
-              key={index}
-              className="bg-gray-100 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 text-left"
-            >
-              {item.icon}
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                {item.title}
-              </h3>
-              <p className="text-gray-700">{item.description}</p>
-            </div>
-          ))}
-        </div>
+      <h2 className="text-center text-4xl font-bold p-2 mb-10">
+        Our Mission & Vision
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className="p-6 text-left bg-base-100 shadow-xl"
+          >
+            {item.icon}
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              {item.title}
+            </h3>
+            <p className="text-gray-700">{item.description}</p>
+          </div>
+        ))}
       </div>
+
     </section>
   );
 };

@@ -35,7 +35,7 @@ const Choose = () => {
                             animate={cardInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                             transition={{ duration: 0.6, delay: index * 0.2 }}
                             whileHover={{ y: -10, boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.1)" }}
-                            className="bg-blue-100 shadow-lg p-6 rounded-lg flex flex-col sm:flex-col lg:flex-row items-center gap-4"
+                            className="shadow-lg bg-base-100 p-6 rounded-lg flex flex-col sm:flex-col lg:flex-row items-center gap-4"
                         >
                             <span className={`text-5xl ${color}`}>{icon}</span>
                             <div>

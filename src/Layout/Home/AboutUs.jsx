@@ -53,7 +53,7 @@ const AboutUs = () => {
                                     exit={{ opacity: 0, y: 20 }}
                                     transition={{ duration: 0.6, delay: index * 0.2 }}
                                     whileHover={{ y: -10, boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.1)" }}
-                                    className="shadow-lg p-6 rounded-lg w-72 text-center"
+                                    className="shadow-lg p-6 rounded-lg w-72 text-center bg-base-100"
                                     style={{ backgroundColor: color }}
                                 >
                                     {icon}
