@@ -36,13 +36,13 @@ const Mission = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="p-6 text-left bg-base-100 shadow-xl"
+            className="p-6 text-base-content text-left bg-base-200 rounded-lg shadow-xl"
           >
             {item.icon}
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+            <h3 className="text-xl text-base-content font-semibold mb-2">
               {item.title}
             </h3>
-            <p className="text-gray-700">{item.description}</p>
+            <p className="text-base-content">{item.description}</p>
           </div>
         ))}
       </div>

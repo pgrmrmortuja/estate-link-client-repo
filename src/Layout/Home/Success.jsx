@@ -34,11 +34,11 @@ const Success = () => {
         {stories.map((story, index) => (
           <div
             key={index}
-            className="rounded-lg p-6 text-left bg-base-100 shadow-xl"
+            className="bg-base-200 rounded-lg p-6 text-left shadow-xl"
           >
             <div className="mb-4">{story.icon}</div>
-            <p className=" italic mb-4">{story.story}</p>
-            <p className="font-semibold ">– {story.name}</p>
+            <p className=" italic mb-4 text-base-content">{story.story}</p>
+            <p className="font-semibold text-base-content">– {story.name}</p>
           </div>
         ))}
       </div>

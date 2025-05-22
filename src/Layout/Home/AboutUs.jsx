@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { FaHome, FaUsers, FaBuilding } from "react-icons/fa";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 

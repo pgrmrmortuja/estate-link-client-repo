@@ -16,7 +16,7 @@ const Choose = () => {
                 className="mt-10 text-center"
             >
                 <h3 className="text-4xl font-bold mb-4">Connect with EstateLink</h3>
-                <p className="text-lg mb-6">
+                <p className="text-lg text-base-content mb-6">
                     At EstateLink, we offer a seamless, secure, and user-friendly platform for buying, selling, and managing properties with ease.
                 </p>
             </motion.div>
@@ -35,12 +35,12 @@ const Choose = () => {
                             animate={cardInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                             transition={{ duration: 0.6, delay: index * 0.2 }}
                             whileHover={{ y: -10, boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.1)" }}
-                            className="shadow-lg bg-base-100 p-6 rounded-lg flex flex-col sm:flex-col lg:flex-row items-center gap-4"
+                            className="shadow-lg bg-base-200 p-6 rounded-lg flex flex-col sm:flex-col lg:flex-row items-center gap-4"
                         >
                             <span className={`text-5xl ${color}`}>{icon}</span>
                             <div>
-                                <h4 className="text-lg font-semibold text-gray-800">{title}</h4>
-                                <p className="text-gray-600">{description}</p>
+                                <h4 className="text-lg text-base-content font-semibold">{title}</h4>
+                                <p className="text-base-content">{description}</p>
                             </div>
                         </motion.div>
                     );

@@ -48,18 +48,18 @@ const TeamSection = () => {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="group rounded-xl bg-base-100 shadow-xl overflow-hidden"
+            className="group rounded-xl bg-base-200 shadow-xl overflow-hidden"
           >
             <img
               src={member.image}
               alt={member.name}
-              className="w-full h-64 object-cover"
+              className="w-full h-56 object-contain"
             />
             <div className="p-4">
-              <h3 className="text-xl font-semibold text-gray-800">
+              <h3 className="text-xl text-base-content font-semibold">
                 {member.name}
               </h3>
-              <p className="text-gray-500 mb-2">{member.role}</p>
+              <p className="mb-2 text-base-content">{member.role}</p>
 
               <div className="flex justify-center gap-4 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <a href={member.fb} target="_blank" rel="noopener noreferrer">

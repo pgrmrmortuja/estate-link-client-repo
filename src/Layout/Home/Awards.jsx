@@ -29,7 +29,7 @@ const Awards = () => {
         {awards.map((award, index) => (
           <div
             key={index}
-            className="rounded-xl p-6 text-left relative bg-base-100 shadow-xl"
+            className="rounded-xl p-6 text-left relative bg-base-200 shadow-xl"
           >
             {/* Ribbon or Badge Icon */}
             <div className="text-4xl absolute -top-6 -left-6 bg-yellow-400 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md">
@@ -37,10 +37,10 @@ const Awards = () => {
             </div>
 
             {/* Award Details */}
-            <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-2">
+            <h3 className="text-xl text-base-content font-semibold mt-6 mb-2">
               {award.title}
             </h3>
-            <p className="text-gray-600">{award.description}</p>
+            <p className="text-base-content">{award.description}</p>
           </div>
         ))}
       </div>

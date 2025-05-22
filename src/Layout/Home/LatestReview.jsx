@@ -31,7 +31,7 @@ const LatestReview = () => {
                     reviews.map((review, index) => (
                         <motion.div 
                             key={review._id} 
-                            className="bg-base-100 shadow-xl p-4 rounded-lg"
+                            className="bg-base-200 shadow-xl p-4 rounded-lg"
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -40,7 +40,7 @@ const LatestReview = () => {
                             <div className="flex items-center mb-3">
                                 <img src={review.reviewer_image} alt={review.reviewer_name} className="w-12 h-12 rounded-full mr-3" />
                                 <div>
-                                    <p className="font-bold">{review.reviewer_name}</p>
+                                    <p className="font-bold text-base-content">{review.reviewer_name}</p>
                                 </div>
                             </div>
                             <p className="text-sm italic text-gray-500 mb-2">"{review.review_description}"</p>

@@ -41,15 +41,15 @@ const LimitAd = () => {
                             <img
                                 src={limit.property_image}
                                 alt={limit.property_title}
-                                className="rounded-xl"
+                                className="rounded-xl h-40 md:h-64"
                             />
                         </figure>
                         <div className="card-body flex flex-grow justify-end ml-4">
-                            <h2 className="card-title">{limit.property_title}</h2>
-                            <p>Location: {limit.property_location}</p>
-                            <p><span className='font-bold'>Price Range:</span> ${limit.price_range.minimum_price} to ${limit.price_range.maximum_price}</p>
+                            <h2 className="card-title text-base-content">{limit.property_title}</h2>
+                            <p className='text-base-content'> <span className='font-bold'>Location:</span> {limit.property_location}</p>
+                            <p className='text-base-content'><span className='font-bold'>Price Range:</span> ${limit.price_range.minimum_price} to ${limit.price_range.maximum_price}</p>
                             <p>
-                                <span className='font-bold mr-2'>Status:</span>
+                                <span className='font-bold text-base-content mr-2'>Status:</span>
                                 <span className='text-green-500 border-2 border-green-500 rounded-lg p-1'>
                                     {limit.verification_status}
                                 </span>
