@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBullseye, FaRocket, FaHandshake, FaChartLine } from "react-icons/fa";
+import { Zoom } from "react-awesome-reveal";
 
 const items = [
   {
@@ -27,25 +28,26 @@ const items = [
 const Mission = () => {
   return (
     <section className="mb-20">
+      <Zoom>
+        <h2 className="text-center text-4xl font-bold p-2 mb-10">
+          Our Mission & Vision
+        </h2>
 
-      <h2 className="text-center text-4xl font-bold p-2 mb-10">
-        Our Mission & Vision
-      </h2>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className="p-6 text-base-content text-left bg-base-200 rounded-lg shadow-xl"
-          >
-            {item.icon}
-            <h3 className="text-xl text-base-content font-semibold mb-2">
-              {item.title}
-            </h3>
-            <p className="text-base-content">{item.description}</p>
-          </div>
-        ))}
-      </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="p-6 text-base-content text-left bg-base-200 rounded-lg shadow-xl"
+            >
+              {item.icon}
+              <h3 className="text-xl text-base-content font-semibold mb-2">
+                {item.title}
+              </h3>
+              <p className="text-base-content">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </Zoom>
 
     </section>
   );

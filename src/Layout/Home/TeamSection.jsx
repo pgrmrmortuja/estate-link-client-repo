@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Zoom } from "react-awesome-reveal";
 
 const teamMembers = [
   {
@@ -40,50 +41,53 @@ const TeamSection = () => {
   return (
 
     <div className="text-center mb-20">
-      <h2 className="text-center text-4xl font-bold p-2 mb-10">
-        Meet Our Team
-      </h2>
+      <Zoom>
+        <h2 className="text-center text-4xl font-bold p-2 mb-10">
+          Meet Our Team
+        </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className="group rounded-xl bg-base-200 shadow-xl overflow-hidden"
-          >
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-full h-56 object-contain"
-            />
-            <div className="p-4">
-              <h3 className="text-xl text-base-content font-semibold">
-                {member.name}
-              </h3>
-              <p className="mb-2 text-base-content">{member.role}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="group rounded-xl bg-base-200 shadow-xl overflow-hidden"
+            >
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-full h-56 object-contain"
+              />
+              <div className="p-4">
+                <h3 className="text-xl text-base-content font-semibold">
+                  {member.name}
+                </h3>
+                <p className="mb-2 text-base-content">{member.role}</p>
 
-              <div className="flex justify-center gap-4 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a href={member.fb} target="_blank" rel="noopener noreferrer">
-                  <FaFacebook className="text-blue-600 hover:text-blue-800 text-xl" />
-                </a>
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin className="text-blue-700 hover:text-blue-900 text-xl" />
-                </a>
-                <a
-                  href={member.twitter}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaTwitter className="text-sky-500 hover:text-sky-700 text-xl" />
-                </a>
+                <div className="flex justify-center gap-4 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <a href={member.fb} target="_blank" rel="noopener noreferrer">
+                    <FaFacebook className="text-blue-600 hover:text-blue-800 text-xl" />
+                  </a>
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin className="text-blue-700 hover:text-blue-900 text-xl" />
+                  </a>
+                  <a
+                    href={member.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaTwitter className="text-sky-500 hover:text-sky-700 text-xl" />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </Zoom>
+
     </div>
 
   );

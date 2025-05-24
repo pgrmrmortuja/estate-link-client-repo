@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUserPlus, FaSearch, FaPhoneAlt, FaHandshake } from "react-icons/fa";
+import { Zoom } from "react-awesome-reveal";
 
 const steps = [
   {
@@ -27,19 +28,22 @@ const steps = [
 const Steps = () => {
   return (
     <section className="mb-20">
-      <h2 className="text-center text-4xl font-bold p-2 mb-10">How to Use</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
-        {steps.map((step, index) => (
-          <div
-            key={index}
-            className="p-6 text-center bg-base-200 rounded-lg shadow-xl"
-          >
-            {step.icon}
-            <h3 className="text-xl text-base-content font-semibold mb-2">{step.title}</h3>
-            <p className="text-base-content">{step.description}</p>
-          </div>
-        ))}
-      </div>
+      <Zoom>
+        <h2 className="text-center text-4xl font-bold p-2 mb-10">How to Use</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="p-6 text-center bg-base-200 rounded-lg shadow-xl"
+            >
+              {step.icon}
+              <h3 className="text-xl text-base-content font-semibold mb-2">{step.title}</h3>
+              <p className="text-base-content">{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </Zoom>
+
     </section>
   );
 };

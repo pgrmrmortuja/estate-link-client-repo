@@ -1,5 +1,6 @@
 import React from "react";
 import { FaQuoteLeft, FaSmile } from "react-icons/fa";
+import { Zoom } from "react-awesome-reveal";
 
 const stories = [
   {
@@ -26,22 +27,24 @@ const Success = () => {
   return (
 
     <div className=" text-center mb-20">
-      <h2 className="text-center text-4xl font-bold p-2 mb-10">
-        Success Stories
-      </h2>
+      <Zoom>
+        <h2 className="text-center text-4xl font-bold p-2 mb-10">
+          Success Stories
+        </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-        {stories.map((story, index) => (
-          <div
-            key={index}
-            className="bg-base-200 rounded-lg p-6 text-left shadow-xl"
-          >
-            <div className="mb-4">{story.icon}</div>
-            <p className=" italic mb-4 text-base-content">{story.story}</p>
-            <p className="font-semibold text-base-content">– {story.name}</p>
-          </div>
-        ))}
-      </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {stories.map((story, index) => (
+            <div
+              key={index}
+              className="bg-base-200 rounded-lg p-6 text-left shadow-xl"
+            >
+              <div className="mb-4">{story.icon}</div>
+              <p className=" italic mb-4 text-base-content">{story.story}</p>
+              <p className="font-semibold text-base-content">– {story.name}</p>
+            </div>
+          ))}
+        </div>
+      </Zoom>
     </div>
 
   );
