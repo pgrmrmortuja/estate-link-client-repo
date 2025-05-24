@@ -36,7 +36,7 @@ const Success = () => {
           {stories.map((story, index) => (
             <div
               key={index}
-              className="bg-base-200 rounded-lg p-6 text-left shadow-xl"
+              className="bg-base-200 hover:scale-110 transition rounded-lg p-6 text-left shadow-xl"
             >
               <div className="mb-4">{story.icon}</div>
               <p className=" italic mb-4 text-base-content">{story.story}</p>

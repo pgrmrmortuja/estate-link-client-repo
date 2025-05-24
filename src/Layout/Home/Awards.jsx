@@ -31,7 +31,7 @@ const Awards = () => {
           {awards.map((award, index) => (
             <div
               key={index}
-              className="rounded-xl p-6 text-left relative bg-base-200 shadow-xl"
+              className="rounded-xl hover:scale-110 transition p-6 text-left relative bg-base-200 shadow-xl"
             >
               {/* Ribbon or Badge Icon */}
               <div className="text-4xl absolute -top-6 -left-6 bg-yellow-400 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md">

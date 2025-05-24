@@ -37,7 +37,7 @@ const Mission = () => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="p-6 text-base-content text-left bg-base-200 rounded-lg shadow-xl"
+              className="p-6 hover:scale-110 transition text-base-content text-left bg-base-200 rounded-lg shadow-xl"
             >
               {item.icon}
               <h3 className="text-xl text-base-content font-semibold mb-2">
